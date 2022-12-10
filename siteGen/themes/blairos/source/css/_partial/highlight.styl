@@ -1,0 +1,233 @@
+$code-block
+  margin: 0
+  font-size: 14px
+  background: #f5f5f5
+  //padding: 15px 0 by blair @2018-10-22 bak yuan
+  border-style: solid; // by blair @2019-11-23 add this key
+  border-color: #f5f2f0; // by blair @2019-11-23 add this key
+  border-width: .2em; // by blair @2019-11-23 add this key
+  border-radius: 0.8em; // by blair @2019-11-23 add this key
+  padding: 4px 0
+  overflow: auto
+  //color: #657b83
+  color: #333
+  line-height: font-size * line-height
+
+$line-numbers
+  color: #666
+  font-size: 0.85em
+
+.article-entry
+  pre, code
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace 
+    //font-family: Consolas, Monaco, Menlo, Consolas, monospace // by blair add at 171017
+    font-size: 0.95em // by blair add at 171017
+  span // by blair add at 171017
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace 
+    //font-family: Consolas, Monaco, Menlo, Consolas, monospace // by blair add at 171017
+  code
+    color: #c7254e // by blair add this line at 160728
+    background: #f2f2f2
+    padding: 0 0.3em
+  pre
+    @extend $code-block
+    padding: 20px
+    code
+      background: none
+      text-shadow: none
+      padding: 0
+    .highlight
+      padding: 0
+  .highlight
+    @extend $code-block
+    //margin-top: 8px; // by blair add 160805
+    pre
+      border: none
+      margin: 0
+      // padding: 0 20px by balir bak 2018-10-22 bay yuan
+      padding: 0 10px // by blair add this line
+    table
+      margin: 0
+      width: auto
+    td
+      border: none
+      padding: 0
+    figcaption
+      clearfix()
+      font-size: 0.85em
+      color: highlight-comment
+      line-height: 1em
+      margin-bottom: 1em
+      a
+        float: right
+    .gutter pre
+      @extend $line-numbers
+      text-align: right
+    .line
+      height: font-size * line-height
+  .gist
+    margin: 0
+    padding: 15px 0
+    .gist-file
+      border: none
+      font-family: font-mono
+      margin: 0
+      .gist-data
+        background: none
+        border: none
+        .line-numbers
+          @extend $line-numbers
+          background: none
+          border: none
+          padding: 0 20px 0 0
+        .line-data
+          padding: 0 !important
+      .highlight
+        margin: 0
+        padding: 0
+        border: none
+      .gist-meta
+        background: highlight-background
+        color: highlight-comment
+        font: 0.85em font-sans
+        text-shadow: 0 0
+        padding: 0
+        margin-top: 1em
+        a
+          @extend $link
+          font-weight: normal
+          &:hover
+            text-decoration: underline
+
+pre
+  // Theme: monokai_sublime
+  // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html.hljs,
+  .tag,
+  .css .rules,
+  .css .value,
+  .css .function
+  .preprocessor,
+  .pragma
+    color: #2ca6cb; // by blair 160727
+    //color: #f8f8f2;
+
+  .strongemphasis,
+  .strong,
+  .emphasis
+    color: #a8a8a2;
+
+  .bullet,
+  .blockquote,
+  .horizontal_rule,
+  .number,
+  .regexp,
+  .alias .keyword,
+  .literal,
+  .hexcolor
+    //color: #ae81ff;
+    color: #333;
+
+  .tag .value,
+  .code,
+  .title,
+  .css .class,
+  .class .title:last-child
+    color: #0000FF;
+    font-weight: bold;
+
+  .link_url
+    font-size: 80%;
+
+  .strong,
+  .strongemphasis
+    font-weight: bold;
+
+  .emphasis,
+  .strongemphasis,
+  .class .title:last-child
+    font-style: italic;
+
+  .keyword,
+  .function,
+  .change,
+  .winutils,
+  .flow,
+  .nginx .title,
+  .tex .special,
+  .header,
+  .attribute,
+  .symbol,
+  .symbol .string,
+  .tag .title,
+  .value,
+  .alias .keyword:first-child,
+  .css .tag,
+  .css .unit,
+  .css .important
+    color: #008000;
+    font-weight: bold
+
+  .function .keyword,
+  .class .keyword:first-child,
+  .constant,
+  .css .attribute
+    color: #008000;
+    font-weight: bold;
+
+  .variable,
+  .params,
+  .class .title
+    //color: #f8f8f2; // by blair bak 160804
+    color: #b58900; // by blair add 160804
+
+  .string,
+  .css .id,
+  .subst,
+  .type,
+  .ruby .class .parent,
+  .built_in,
+  .django .template_tag,
+  .django .variable,
+  .smalltalk .class,
+  .django .filter .argument,
+  .smalltalk .localvars,
+  .smalltalk .array,
+  .attr_selector,
+  .pseudo,
+  .addition,
+  .stream,
+  .envvar,
+  .apache .tag,
+  .apache .cbracket,
+  .tex .command,
+  .prompt,
+  .link_label,
+  .link_url
+    color: #718c00; // by blair 160727
+    //color: #BA2121;
+
+  .comment,
+  .javadoc,
+  .annotation,
+  .decorator,
+  .template_comment,
+  .pi,
+  .doctype,
+  .deletion,
+  .shebang,
+  .apache .sqbracket,
+  .tex .formula
+    //color: #408080; // by blair bak 160804
+    color: #93a1a1; // by blair add 160804
+    font-style: italic;
+
+  .coffeescript .javascript,
+  .javascript .xml,
+  .tex .formula,
+  .xml .javascript,
+  .xml .vbscript,
+  .xml .css,
+  .xml .cdata,
+  .xml .php,
+  .php .xml
+    opacity: 0.5;

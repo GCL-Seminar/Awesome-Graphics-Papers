@@ -1,0 +1,12 @@
+<% if (post.tags && post.tags.length){ %>
+  <div class="article-tag">
+    <%- list_tags(post.tags, {
+      show_count: false,
+      class: 'article-tag',
+      <!-- by blair 160724 -->
+      style: 'none',
+      separator: '<span></span>'
+      <!-- by blair 160724 -->
+    }) %>
+  </div>
+<% } %>

@@ -1,0 +1,18 @@
+<article class="archive-article archive-type-paper-post" style="border-bottom: none">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <span  style="color: #939393;
+                    text-decoration: none;
+                    margin-bottom: 0.5em;
+                    font-size: 0.95em;
+                    line-height: 2em;
+             ">
+        (<%= typeof(post.status) == 'undefined' ? 'Working' : post.status %>)
+        <%= post.papersource %>
+      </span>
+      <a class="archive-article-title" href="<%- url_for(post.path) %>">
+        <%= post.papertitle %>
+      </a>
+    </header>
+  </div>
+</article>

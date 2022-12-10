@@ -1,0 +1,52 @@
+.layout-wrap
+  margin: block-margin 0
+  
+.layout-title
+  //font-size: 24px
+  font-size: 1.7em
+  margin-bottom: 1em
+  border-bottom: 0.5px LightGrey solid;
+  width: 98%;
+  line-height: 200%;
+  
+.layout-wrap-inner
+  .category-list,
+  .category-list-child
+    clearfix()
+    line-height: 1.8em
+  .category-list
+    a
+      @extends $link
+  .category-list-child
+    margin-left: 24px
+  li
+    &:before
+      content: '>'
+      float: left
+      padding: 0 16px 0 0
+  .category-list-count
+    margin-left: 8px
+    color: color-grey
+    &:before
+      content: '('
+    &:after
+      content: ')'
+      
+.tag-cloud
+  a
+    @extends $link
+    margin-right: 8px
+    line-height: 2
+    font-family: Consalos
+    //color: #444
+    //color: #2561c2;
+    //color: mix(#428bca, #2561c2, 35%);
+    //color: #0066FF;
+    color: black;
+    &:before
+     //content: '#' blair
+     //font-family: "FontAwesome";
+     //-webkit-font-smoothing: antialiased;
+     //-moz-osx-font-smoothing: grayscale;
+     //content: "\f02c";
+

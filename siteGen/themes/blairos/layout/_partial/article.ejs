@@ -1,0 +1,75 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <%- partial('post/gallery') %>
+    <% if (post.link || post.title || post.papertitle){ %>
+      <header class="article-header">
+        <%- partial('post/title-detail', {class_name: 'article-title'}) %>
+        <div class=page-title></div>
+        <br>
+      </header>
+    <% } %>
+    <div class="article-meta">
+      <!--<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>-->
+      <!-- <%- partial('post/category') %>--><!-- by blair 160724 -->
+      <!-- by blair
+      <% if (post.comments && config.disqus_shortname){ %>
+        <div class="article-comment-link-wrap">
+          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('article.comments') %></a>
+        </div>
+      <% } %>
+      -->
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.layout == 'paper-reading') { %>
+        <blockquote>
+          <p>论文标题：<%= typeof(post.papertitle) !== 'undefined' ? post.papertitle : "未知" %></p>
+          <p>论文来源：<%= typeof(post.papersource) !== 'undefined' ? post.papersource : "未知" %></p>
+          <p>论文作者：<%= typeof(post.paperauthors) !== 'undefined' ? post.paperauthors : "未知" %></p>
+          <%- (typeof(post.paperurl) !== 'undefined') ? '<p><a href=\'' + post.paperurl + '\'>论文链接</a></p>' : "" %>
+
+        </blockquote>
+      <% } %>
+      
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    <% if (post.categories || post.tags){ %> <!-- by blair add this if sentence at 20160725 -->
+      <br>
+      <%- partial('post/well') %> <!-- by blair add 160724-->
+    <% } %>
+    </div>
+    <% if (!index && theme.toc && toc(post.content)) { %>
+      <div class="article-toc">
+        <h3><%= __('article.contents') %></h3>
+        <%- toc(post.content, {list_number: false}) %>
+      </div>
+    <% } %>
+    <% if (!index || post.tags.length){ %>
+      <footer class="article-footer">
+        <!-- <div class="well" style="width:100px; height:30px;"></div>  by blair-->
+        <%- partial('post/category') %> <!-- by blair add 160724-->
+        <!--
+        <div style="width:100px; height:30px;"></div> by blair add 160724
+        -->
+        <%- partial('post/tag') %>
+      </footer>
+    <% } %>
+  </div>
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+</article>
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>

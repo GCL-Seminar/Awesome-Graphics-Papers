@@ -1,0 +1,26 @@
+<% if (post.link){ %>
+  <h1 itemprop="name">
+    <a  href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><%= post.title %></a>
+    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, date_format) %></time>
+  </h1>
+<% } else if (post.title){ %>
+  <% if (index){ %>
+    <h4 itemprop="name">
+      <% if (!post.papertitle) { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><strong><%= post.title %></strong></a>
+        <small class=article-date-index>&nbsp; <%= date(post.date) %></small>
+      <% } else { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><strong><%= post.papertitle %></strong></a>
+      <% } %>
+    </h4>
+  <% } else { %>
+    <h1 class="<%= class_name %>" itemprop="name">
+      <%= post.title %>
+      <small class=article-detail-date-index>&nbsp; <%= date(post.date) %></small>
+    </h1>
+  <% } %>
+<% } else if (post.papertitle){ %>
+  <h1 itemprop="name">
+    <a href="<%- url_for(post.path) %>" class="<%= class_name %>" target="_blank" itemprop="url"><%= post.papertitle %></a>
+  </h1>
+<% } %>

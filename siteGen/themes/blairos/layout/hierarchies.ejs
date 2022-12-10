@@ -1,0 +1,55 @@
+<article id="hierarchy-page" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <header class="article-header">
+      <h4 itemprop="name">
+        <a class="article-title" href="<%- url_for(page.path) %>"><strong>Hierarchies</strong></a>
+      </h4>
+      <br>
+    </header>
+    <div class="article-entry" itemprop="articleBody">
+      <!-- root hierarchy -->
+      <%
+        const rootHier = page.hierarchies.rootHierarchy;
+
+        const processNode = function(node, depth) {
+          const nodeName = node.name;
+          let output = "";
+          if (depth == 0) {
+            output += "<p>" + nodeName + "</p>";
+          } else {
+            output += nodeName;
+          }
+  
+          // check for node children
+          if ("children" in node) {
+            let result = node.children.map((node) => {
+              return processNode(node, depth+1);
+            });
+            output += "<ul><li>";
+            output += result.join('</li><li>');
+            output += "</li></ul>";
+          } else {
+            // leaf node, gather articles
+            if (page.hierarchies.leafNodes[nodeName].length > 0) {
+              output += '<ul id="' + nodeName + '">';
+              output += "<li>"
+              let tagElems = [];
+              page.hierarchies.leafNodes[nodeName].forEach((metaDict) => {
+                tagElems.push('<a href="' + url_for(metaDict.path) + '">' + metaDict.title + '</a>');
+              });
+              output += tagElems.join(', ');
+              output += "</li>";
+              output += "</ul>";
+            }
+          }
+          return output;
+        };
+
+      %>
+
+      <%- processNode(rootHier, 0) %>
+
+    </div>
+  </div>
+</article>
+

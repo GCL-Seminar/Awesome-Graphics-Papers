@@ -1,0 +1,20 @@
+<% if (post.link){ %>
+  <h1 itemprop="name">
+    <a class="<%= class_name %>" href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><%= post.title %></a>
+    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, date_format) %></time>
+  </h1>
+<% } else if (post.title){ %>
+  <% if (index){ %>
+    <myh11 class="desc-index"> <!--by blair 160805 -->
+      <%= post.description %> <!-- by blair 160805 bak-->
+      <!--<a class="</strong></a>-->
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+    </myh11> <!--by blair 160805-->
+  <% } else { %>
+    <myh11 class="<%= class_name %>" itemprop="name">
+      <%= post.title %>
+    </myh11>
+  <% } %>
+<% } %>
