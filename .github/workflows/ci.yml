@@ -15,6 +15,7 @@ jobs:
 
       - name: Install and Build
         run: |
+          cd siteGen
           npm ci
           npm run build
       - name: Deploy
