@@ -3,7 +3,7 @@
 
 本列表采用 hexo 编译，使用自行维护的模板 `awesome-papers`。
 
-查看编译后的站点请点击[这里]()。
+查看编译后的站点请点击[这里](https://gcl-rendering.github.io/Awesome-Rendering-Papers/)。
 
 ## 仓库内容维护
 
