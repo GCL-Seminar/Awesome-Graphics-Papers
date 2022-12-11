@@ -9,6 +9,31 @@
 
 更新请通过 Pull Requests 的方法进行，这样合并到主分支前可以进行数据完整性的检查。
 
+### 如何添加新文章：超快速上手指南
+
+假设现在要添加来自于 *conf* 会议 *year* 年的文章 *paper*：
+1. 准备工作
+   1. 确保你安装有 git 和合适的 Markdown 编辑器（比如 VSCode）
+   2. Fork 一份本仓库到自己的 GitHub 账号下，或者在本仓库下创建名为 `dev/你的名字` 的分支
+   3. 把前面的分支 / Fork clone 到本地
+2. 检查 *conf* 会议的会议数据文件 (`conf.yml`) 是否已经在 `paperSources` 文件夹中创建
+   - 如果没有创建，仿照其它会议在目录下创建此文件。详情请参考 **会议/期刊论文页面** 一节中的介绍
+3. 检查 *conf* 会议的会议数据文件 (`conf.yml`) 中，是否已经在 *year* 年下存在文章 *paper*
+   > 为什么很多还没有在讨论班讲过的文章也要记录进来？
+   > 
+   > 这是考虑到，如果是采用按会议来“扫”文章的阅读方法，那么找会议的文章列表其实是比较重复的工作，可以由第一位同学一口气做好，这样之后的同学挑文章时可以省点事儿。
+   - 如果不存在，则在对应的 *year* 字段下加入文章，格式请参考写好的其他文件，比如 `paperSources/SIGGRAPH-Asia.yml`
+     - 请注意，*paper* 需要字符串意义上的匹配，多 / 少空格都是不可以的
+4. 添加介绍页面 (`paper_short_name.md`)，放到 `papers/conf/year/` 下
+   - Markdown 文件的名字推荐起短一些的，方便在 VSCode 等编辑器中查看；文件名本身不影响任何其它地方
+   - 请参考 **文章简介页面** 一节的描述进行 Markdown 文件的写作，推荐从写好的文件开始进行修改
+   - `papertitle` 等字段需要字符串意义上的匹配，多 / 少空格都是不可以的
+5. Commit 并创建到 `main` 分支的 Pull Request
+   - 提交时会由配置好的 GitHub Actions 进行自动检查，请等检查通过后再合并 Pull Request
+   - 一个 Pull Request 示例：https://github.com/GCL-Rendering/Awesome-Rendering-Papers/pull/1
+6. 合并到 `main` 分支后，等待 GitHub Pages 持续集成编译完成
+   - 编译是比较快的，但是 GitHub Pages 的缓存刷新需要不短的时间，距 libreliu 的使用体验可能需要十分钟左右
+
 ### 会议/期刊论文页面
 
 本页面维护于 `paperSources` 下的各个文件，同时用软符号链接的方式，链接到 `siteGen/sources` 目录下。
@@ -32,9 +57,10 @@
 layout: 'paper-reading'
 papertitle: '你的文章名字; 这里的文章名字需要匹配 Source 中相应的会议/期刊 yaml 中该年的论文名字'
 paperauthors: 作者一, 作者二, 作者三
-papersource: '来源会议; 需要和对应的会议/期刊的 yaml 中会议/期刊的名字一致'
+papersource: '来源会议; 需要和对应的会议/期刊的 yaml 文件名一致'
 paperurl: '项目主页或论文地址; 优先写项目主页'
-papertags: 叶子节点集合
+papertags: 叶子节点集合，以逗号分割
+date: 讲的讨论班日期，格式 yyyy-mm-dd，如 2022-08-08；没讲过就写你编辑的时间就行
 ---
 
 基本信息：
