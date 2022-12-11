@@ -85,7 +85,7 @@ hexo.extend.filter.register('before_post_render', function(data) {
     requiredAttrs.forEach((attrName) => {
       if (!(attrName in data)) {
         console.error("Expected attribute %s for post %s", attrName, data.path);
-        throw new Error("paperMeta validation: Expected attribute %s for post %s", attrName, data.path);
+        throw new Error("paperMeta validation: Expected attribute " + attrName + " for post " + data.path);
       }
     });
 
@@ -103,6 +103,42 @@ hexo.extend.filter.register('before_post_render', function(data) {
     logOutput += '- URL: ' + paperURL + "\n";
     console.log(logOutput);
 
+    // Paper validations:
+    // 1. The paper must be present in paper sources database
+    const paperSrcDb = hexo.locals.get('paperSources');
+    if (!(paperSource in paperSrcDb)) {
+      console.error("Unknown conference %s for paper %s", paperSource, paperTitle);
+      throw new Error(
+        "paperMeta validation: Unknown conference " + 
+        paperSource + " for paper " + paperTitle
+      );
+    }
+    const allSelectedConfPapers = paperSrcDb[paperSource].papers;
+    if (allSelectedConfPapers == null) {
+      console.error("Source database for conference %s is empty", paperSource, paperTitle);
+      throw new Error(
+        "paperMeta validation: Source database for conference " + 
+        paperSource + " is empty; (checking for paper " + paperTitle + ")"
+      );
+    }
+
+    let allPapers = [];
+    Object.keys(allSelectedConfPapers).forEach((year) => {
+      allPapers = allPapers.concat(allSelectedConfPapers[year].map((x => x.name)));
+    })
+
+    // console.log(allPapers);
+    if (!(allPapers.includes(paperTitle))) {
+      console.error(
+        "Paper '%s' is not in conference %s's source paper list", paperTitle, paperSource
+      );
+      console.log("Note: list of papers in %s:\n%s", paperSource, allPapers);
+      throw new Error(
+        "paperMeta validation: Paper '" + paperTitle + "' is not in conference " + 
+        paperSource + "'s source paper list"
+      );
+    }
+
     // Tag validations:
     // 1. EVERY paper must belong to >= 1 tag
     // 2. the tag is an leaf tag
@@ -111,7 +147,7 @@ hexo.extend.filter.register('before_post_render', function(data) {
     paperTags.forEach((tagName) => {
       if (!(tagName in hierarchy.leafNodes)) {
         console.error("Tag %s for paper %s is not in hierarchy leaf nodes", tagName, paperTitle);
-        throw new Error("paperMeta validation: Tag %s for paper %s is not in hierarchy leaf nodes", tagName, paperTitle);
+        throw new Error("paperMeta validation: Tag " + tagName + " for paper " + paperTitle + " is not in hierarchy leaf nodes");
       }
 
       hierarchy.leafNodes[tagName].splice(0, 0, {
@@ -131,7 +167,7 @@ hexo.extend.filter.register('before_post_render', function(data) {
         "Paper [" + paperTitle + "] has duplicate occurances. Current: " +
         paperPath + ", Previous: " + oldMeta[paperTitle].path
       );
-      throw new Error("paperMeta validation: duplicate paper with title=%s", paperTitle);
+      throw new Error("paperMeta validation: duplicate paper with title=" + paperTitle);
     }
 
     oldMeta[paperTitle] = {
