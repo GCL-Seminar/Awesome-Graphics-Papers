@@ -4,7 +4,8 @@ papertitle: 'ICARUS: A Specialized Architecture for Neural Radiance Fields Rende
 paperauthors: Chaolin Rao, Huangjie Yu, Haochuan Wan, Jindong Zhou, Yueyang Zheng, Yu Ma, Anpei Chen, Minye Wu, Binzhe Yuan, Pingqiang Zhou, Xin Lou, Jingyi Yu
 papersource: 'SIGGRAPH-Asia'
 paperurl: 'https://arxiv.org/abs/2203.01414'
-papertags: NeRF,Geometry
+papertags: NeRF, Geometry
+date: 2022-10-16
 ---
 
 基本信息：

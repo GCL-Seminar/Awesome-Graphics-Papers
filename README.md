@@ -1,7 +1,7 @@
 # Awesome-Rendering-Papers
 本仓库存储 GCL 渲染组看过的论文整理后的列表。
 
-本列表采用 hexo 编译，使用自行维护的模板 `awesome-papers`。
+本列表采用 hexo 编译，使用模板 `blairos` 修改而成。
 
 查看编译后的站点请点击[这里](https://gcl-rendering.github.io/Awesome-Rendering-Papers/)。
 
@@ -12,6 +12,8 @@
 ### 会议/期刊论文页面
 
 本页面维护于 `paperSources` 下的各个文件，同时用软符号链接的方式，链接到 `siteGen/sources` 目录下。
+
+加入尚未存在的论文前，务必先更新此文件。
 
 ### 概念层级结构页面
 
@@ -47,6 +49,8 @@ papertags: 叶子节点集合
 ```
 
 ### 完整性检查列表
+
+> 每个提交必须完成下面的完整性检查，否则持续集成系统会失败。
 
 1. 每个论文必须有 >= 1 个 tag
 2. 每个 tag 必须为 leaf tag

@@ -10,15 +10,12 @@
         <blockquote>
           黑色为加入源数据库，但是尚未有相关论文页面的论文。
         </blockquote>
-        <!-- root hierarchy -->
         <%
           const paperSources = page.paperSources;
           let output = "";
           console.log(page.paperSources);
           Object.keys(paperSources).forEach((confName) => {
-            console.log(confName);
             output += "<h2>" + paperSources[confName].sourceInfo.name + "</h2>";
-            console.log(paperSources[confName].papers);
             if (paperSources[confName].papers != null) {
               Object.keys(paperSources[confName].papers).forEach((year) => {
                 output += "<h3>" + year + "</h3>";
@@ -27,10 +24,13 @@
                   paperSources[confName].papers[year].forEach((paperObj) => {
                     if (paperObj.name in page.paperMeta) {
                       output += "<li>";
-                      output += '<a href="' + url_for(paperObj.path) + '">' + paperObj.name + '</a>'
-                      output += "<ul><li>";
-                      page.paperMeta[paperObj.name].tags.forEach((tagName) => {
+                      output += '<a href="' + url_for(page.paperMeta[paperObj.name].path) + '">' + paperObj.name + '</a>'
+                      output += "<ul><li>Tags: ";
+                      page.paperMeta[paperObj.name].tags.forEach((tagName, tagIndex) => {
                         output += '<a href="' + url_for("hierarchies.html") + '#' + tagName + '">' + tagName + '</a>';
+                        if (tagIndex != page.paperMeta[paperObj.name].tags.length - 1) {
+                          output += ', ';
+                        }
                       });
                       output += "</li></ul>";
                       output += "</li>";

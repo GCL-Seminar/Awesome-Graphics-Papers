@@ -85,7 +85,14 @@
       </nav>
     <% }
     break;
-  default:
+  default: %>
+    <div class="article-entry" itemprop="articleBody">
+      <blockquote>
+        <p>本页面为主页，论文阅读小结的所有更新会在本页面展示，更新按 Front-matter 的 date 字段为顺序进行展示。</p>
+      </blockquote>
+    </div>
+    <hr>
+    <%
     page.posts.each(function(post){ %>
       <%- partial('index', {post: post, index: true}) %>
     <% })

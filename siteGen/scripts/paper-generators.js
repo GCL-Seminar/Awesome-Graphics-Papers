@@ -73,7 +73,7 @@ hexo.on('ready', function() {
     return paperSources;
   });
 
-  console.log(hexo.locals.post);
+  // console.log(hexo.locals.post);
 
   // key: papertitle; value: {path: sth}
   hexo.locals.set('paperMeta', {});
@@ -92,7 +92,7 @@ hexo.extend.filter.register('before_post_render', function(data) {
     const paperTitle = data.papertitle;
     const paperPath = data.path;
     const paperSource = data.papersource;
-    const paperTags = data.papertags.split(",");
+    const paperTags = data.papertags.split(",").map(x => x.trim());
     const paperURL = data.paperurl;
 
     let logOutput = "";
@@ -168,7 +168,7 @@ hexo.extend.generator.register('hierarchy-all', function(locals) {
   // Object.keys(locals.paperSources).forEach(function (srcName) {
 
   // });
-  console.log(locals.hierarchies.leafNodes);
+  // console.log(locals.hierarchies.leafNodes);
   return {
     path: 'hierarchies.html',
     data: {
