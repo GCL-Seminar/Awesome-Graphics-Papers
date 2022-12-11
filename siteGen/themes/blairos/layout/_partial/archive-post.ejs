@@ -1,0 +1,14 @@
+<article class="archive-article archive-type-<%= post.layout %>" style="border-bottom
+:none">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <% if(archive) { %>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY-MM-DD'}) %> 
+      <% } else { %>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY-MM-DD'}) %> <!-- by blair modify date-->
+      <% } %> »
+      <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+     
+    </header>
+  </div>
+</article>

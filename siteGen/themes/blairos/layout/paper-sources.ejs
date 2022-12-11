@@ -1,0 +1,57 @@
+<article id="paper-sources-page" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <header class="article-header">
+        <h4 itemprop="name">
+          <a class="article-title" href="<%- url_for(page.path) %>"><strong>Paper sources</strong></a>
+        </h4>
+        <br>
+      </header>
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
+          黑色为加入源数据库，但是尚未有相关论文页面的论文。
+        </blockquote>
+        <!-- root hierarchy -->
+        <%
+          const paperSources = page.paperSources;
+          let output = "";
+          console.log(page.paperSources);
+          Object.keys(paperSources).forEach((confName) => {
+            console.log(confName);
+            output += "<h2>" + paperSources[confName].sourceInfo.name + "</h2>";
+            console.log(paperSources[confName].papers);
+            if (paperSources[confName].papers != null) {
+              Object.keys(paperSources[confName].papers).forEach((year) => {
+                output += "<h3>" + year + "</h3>";
+                if (paperSources[confName].papers[year] != null) {
+                  output += "<ul>"
+                  paperSources[confName].papers[year].forEach((paperObj) => {
+                    if (paperObj.name in page.paperMeta) {
+                      output += "<li>";
+                      output += '<a href="' + url_for(paperObj.path) + '">' + paperObj.name + '</a>'
+                      output += "<ul><li>";
+                      page.paperMeta[paperObj.name].tags.forEach((tagName) => {
+                        output += '<a href="' + url_for("hierarchies.html") + '#' + tagName + '">' + tagName + '</a>';
+                      });
+                      output += "</li></ul>";
+                      output += "</li>";
+                    } else {
+                      output += "<li>" + paperObj.name + "</li>";
+                    }
+                    
+                  });
+                  output += "</ul>";
+                }
+
+              });
+            }
+
+          });
+        %>
+  
+        <%- output %>
+  
+      </div>
+    </div>
+  </article>
+  
+  

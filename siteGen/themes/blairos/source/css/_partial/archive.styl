@@ -1,0 +1,92 @@
+.archives-wrap
+  margin: block-margin 0
+
+.archives
+  clearfix()
+
+.archive-year-wrap,
+.archive-category-wrap,
+.archive-tag-wrap
+  font-size: 1.4em
+  margin-bottom: 1em
+  a
+    @extend $link
+
+// .archive-year
+
+.archives
+  margin-left: 5px
+  border-left: 1px solid color-border
+
+// .archive-article
+
+.archive-article-inner
+  // padding: 10px 10px 10px 12px
+  padding: 1px 10px 1px 12px
+  // margin: 15px 0 15px -2px  by blair 160725
+  margin: -10px 0 1px -0.1px
+  border-left: 3px solid transparent
+  &:hover
+    border-left-color: black
+
+.archive-article-title
+  //color: mix(#428bca, #2561c2, 33%);
+  color: #2561c2;
+  //font-weight: 200;
+  //color: mix(#4cb07b, #444, 53%); by blair bak 160805
+  box-sizing: border-box;
+  font-size: 1em
+  //font-family: Consolas; // by blair add 160730
+  font-family: Source Sans Pro, "Helvetica Neue", Arial, sans-serif; // by blair add 2017.10.17
+  @extend $link
+
+.archive-article-footer
+  margin-top: 1em
+
+.archive-article-date
+  color: color-grey
+  text-decoration: none
+  //font-size: 0.85em
+  //line-height: 1em
+  margin-bottom: 0.5em
+  //display: block
+  font-size: 0.95em // by blair add at 171017
+  width: 100px  // by blair add at 171017 , modilfy @018-08-27
+  line-height: 2em  // by blair add at 171017
+  display: inline-block  // by blair add at 171017
+
+.archive-type-post
+  padding: 5px 0;
+  margin: 0 !important;
+
+#page-nav
+  clearfix()
+  margin: block-margin auto
+  text-align: center
+  overflow: hidden
+  a, span
+    width: 36px
+    height: 36px
+    margin: 0 5px
+    line-height: 36px
+    text-align: center
+  a.prev,
+  a.next
+    margin: 0
+    width: auto
+  a
+    @extends $link
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: #fff
+    border-radius: 18px
+    background-color: black
+  .space
+    color: color-border
