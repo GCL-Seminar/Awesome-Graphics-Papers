@@ -125,7 +125,7 @@ hexo.extend.filter.register('before_post_render', function(data) {
     let allPapers = [];
     Object.keys(allSelectedConfPapers).forEach((year) => {
       allPapers = allPapers.concat(allSelectedConfPapers[year].map((x => x.name)));
-    })
+    });
 
     // console.log(allPapers);
     if (!(allPapers.includes(paperTitle))) {
@@ -180,6 +180,36 @@ hexo.extend.filter.register('before_post_render', function(data) {
     hexo.locals.set('paperMeta', oldMeta);
   }
   // console.log(data.papertitle);
+});
+
+hexo.extend.filter.register('template_locals', function(locals){
+  locals.paperSources = hexo.locals.get('paperSources');
+  locals.getYearInSources = function (paperTitle, paperConf) {
+    const paperSrcDb = hexo.locals.get('paperSources');
+    // console.log(paperSrcDb);
+    const allSelectedConfPapers = paperSrcDb[paperConf].papers;
+    let paperYear = -1;
+    Object.keys(allSelectedConfPapers).forEach((year) => {
+      allSelectedConfPapers[year].forEach((paperObj) => {
+        if (paperObj.name == paperTitle) {
+          paperYear = year;
+        }
+      })
+    });
+
+    if (paperYear == -1) {
+      console.error(
+        "Paper '%s' is not in conference %s's source paper list", paperTitle, paperConf
+      );
+      throw new Error(
+        "Modify template locals: Paper '" + paperTitle + "' is not in conference " + 
+        paperConf + "'s source paper list"
+      );
+    }
+
+    return paperYear;
+  };
+  return locals;
 });
 
 // == Sources ==

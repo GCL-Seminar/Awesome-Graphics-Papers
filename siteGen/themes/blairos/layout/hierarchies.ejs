@@ -37,7 +37,7 @@
               page.hierarchies.leafNodes[nodeName].forEach((metaDict) => {
                 tagElems.push('<a href="' + url_for(metaDict.path) + '">' + metaDict.title + '</a>');
               });
-              output += tagElems.join(', ');
+              output += tagElems.join('</li><li>');
               output += "</li>";
               output += "</ul>";
             }

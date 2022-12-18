@@ -1,0 +1,40 @@
+# PACMCGIT paper list
+# Relations with conference:
+# - SCA papers will be revised, and appear in PACMCGIT upon approval
+#   - SCA: ACM SIGGRAPH / Eurographics Symposium on Computer Animation
+#   - https://sca2019.kaist.ac.kr/wordpress/call-for-participation/
+# - All HPG papers will be published in PACMCGIT
+#   - High-Performance Graphics
+#   - https://www.highperformancegraphics.org/2022/index.html
+# - All I3D papers will be published in PACMCGIT
+#   - ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+#   - https://i3dsymposium.org/2022/papers.html
+# - SIGGRAPH Art Papers will be published in PACMCGIT
+#   - https://leonardo.info/opportunity/siggraph-2022-is-calling-for-art-paper-proposals
+# - ETRA will be published in PACMCGIT; not that related to rendering though
+#   - https://etra.acm.org/2022/cfp.html
+
+sourceInfo:
+  name: PACMCGIT
+  fullname: Proceedings of the ACM on Computer Graphics and Interactive Techniques
+papers:
+  2022:
+  # ==== Volume 5, Issue 3 ====
+  # In Front matter (Editor's Note): 
+  # This issue of PACMCGIT includes papers associated with the 
+  # High Performance Graphics (HPG) conference, organized in July 2022.
+  # SESSION: Sampling and filtering
+  - name: 'Temporally Stable Real-Time Joint Neural Denoising and Supersampling'
+  - name: 'Spatiotemporal Variance-Guided Filtering for Motion Blur'
+  - name: 'Virtual Blue Noise Lighting'
+  # SESSION: Graphics Systems
+  - name: 'A Data-Driven Paradigm for Precomputed Radiance Transfer'
+  - name: 'Supporting Unified Shader Specialization by Co-opting C++ Features'
+  # SESSION: Geometry and Textures
+  - name: 'High-Performance Polynomial Root Finding for Graphics'
+  - name: 'Ray/Ribbon Intersections'
+  - name: 'Htex: Per-Halfedge Texturing for Arbitrary Mesh Topologies'
+  # SESSION: Acceleration Structures
+  - name: 'Data Parallel Path Tracing with Object Hierarchies'
+  - name: 'PLOC++: Parallel Locally-Ordered Clustering for Bounding Volume Hierarchy Construction Revisited'
+  - name: 'Better Fixed-Point Filtering with Averaging Trees'
