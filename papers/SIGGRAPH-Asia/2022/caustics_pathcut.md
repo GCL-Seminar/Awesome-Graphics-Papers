@@ -5,6 +5,7 @@ paperauthors: He Li, Beibei Wang, Changhe Tu, Kun Xu, Nicolas Holzschuch, Ling-Q
 papersource: 'SIGGRAPH-Asia'
 paperurl: 'https://wangningbei.github.io/2022/PathcutGuiding_files/paper_pathcut_guiding.pdf'
 papertags: Ray tracing,Acceleration structure
+date: 2022-12-04
 ---
 
 基本信息：
