@@ -22,7 +22,5 @@
     </h1>
   <% } %>
 <% } else if (post.papertitle){ %>
-  <h1 class="<%= class_name %>" itemprop="name">
-    <%= post.papertitle %>
-  </h1>
+    <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.papertitle %></a>
 <% } %>

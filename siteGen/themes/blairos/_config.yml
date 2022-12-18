@@ -3,6 +3,7 @@ logo_text:  # Add text logo instead of logo image
 
 menu:
   主页: /
+  归档: archives
   层次结构: hierarchies
   论文列表: paper-sources
   关于: about
