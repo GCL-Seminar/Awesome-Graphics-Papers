@@ -19,3 +19,5 @@ date: 2022-12-18
     - 时间比较紧，看的也不是很明白，没写 ppt
 
 自己写的博客：https://blog.libreliu.info/paper-reading/data-driven-prt/
+
+另一个可能有用的材料：[游戏中的全局光照(四) Lightmap、LightProbe和Irradiance Volume - 知乎专栏](https://zhuanlan.zhihu.com/p/265463655)
