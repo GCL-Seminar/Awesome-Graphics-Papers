@@ -30,7 +30,6 @@ papers:
   # SESSION: Graphics Systems
   - name: 'A Data-Driven Paradigm for Precomputed Radiance Transfer'
   - name: 'Supporting Unified Shader Specialization by Co-opting C++ Features'
-  - name: 'A Data-Driven Paradigm for Precomputed Radiance Transfer'
   # SESSION: Geometry and Textures
   - name: 'High-Performance Polynomial Root Finding for Graphics'
   - name: 'Ray/Ribbon Intersections'
