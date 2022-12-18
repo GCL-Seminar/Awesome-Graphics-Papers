@@ -5,7 +5,7 @@ paperauthors: Yang Zhou, Lifan Wu, Ravi Ramamoorthi, Ling-Qi Yan
 papersource: 'SIGGRAPH'
 paperurl: 'https://sites.cs.ucsb.edu/~lingqi/publications/paper_vectorization.pdf'
 papertags: Ray tracing
-date: 2022-12-17
+date: 2022-12-18
 ---
 
 基本信息：
