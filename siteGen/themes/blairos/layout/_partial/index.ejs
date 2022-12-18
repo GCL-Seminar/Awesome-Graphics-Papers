@@ -29,10 +29,19 @@
       <% } else { %>
         <% if (post.layout == 'paper-reading') { %>
           <blockquote>
-            <p>论文标题：<%= typeof(post.papertitle) !== 'undefined' ? post.papertitle : "未知" %></p>
-            <p>论文来源：<%= typeof(post.papersource) !== 'undefined' ? post.papersource : "未知" %></p>
-            <p>论文作者：<%= typeof(post.paperauthors) !== 'undefined' ? post.paperauthors : "未知" %></p>
-            <%- (typeof(post.paperurl) !== 'undefined') ? '<p><a href=\'' + post.paperurl + '\'>论文链接</a></p>' : "" %>
+            <p>论文标题：<%= post.papertitle %></p>
+            <p>论文来源：<%= post.papersource %> <%= getYearInSources(post.papertitle, post.papersource) %>
+            </p>
+            <p>论文作者：<%= post.paperauthors %></p>
+            <% 
+              let tagOutputHTMLs = [];
+              post.papertags.split(",").map(x => x.trim()).forEach((tagName) => {
+                tagOutputHTMLs = tagOutputHTMLs.concat('<a href="' + url_for("hierarchies.html") + '#' + tagName + '">' + tagName + '</a>');
+              });
+            %>
+            <p>论文标签：<%- tagOutputHTMLs.join(", ") %></p>
+            <%- (typeof(post.paperurl) !== 'undefined') ? '<p><a href=\'' + post.paperurl + '\'>论文 / 项目链接</a></p>' : "" %>
+    
           </blockquote>
           <%- post.content %>
         <% } else { %>
