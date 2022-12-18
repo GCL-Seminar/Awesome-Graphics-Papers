@@ -83,7 +83,7 @@
     
     <div class="article-meta">
       <!--<a href="/Awesome-Rendering-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/" class="article-date">
-  <time datetime="2022-12-17T10:37:05.254Z" itemprop="datePublished">2022-12-17</time>
+  <time datetime="2022-12-18T11:47:57.426Z" itemprop="datePublished">2022-12-18</time>
 </a>-->
       <!--
 -->
@@ -112,6 +112,75 @@
 </li>
 </ul>
 <p>首先利用Pathcut方法生成的Pure Specular Path，然后使用这个代表性路径对bounce处的入射光分布进行估计，根据估计的入射光分布可以引导bounce处的采样</p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="paper-reading-papers/CVPR/2022/RefNeRF" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Rendering-Papers/papers/CVPR/2022/RefNeRF/"><strong>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Rendering-Papers/papers/CVPR/2022/RefNeRF/" class="article-date">
+  <time datetime="2022-12-18T00:00:00.000Z" itemprop="datePublished">2022-12-18</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</p>
+            <p>论文来源：CVPR</p>
+            <p>论文作者：Dor Verbin, Peter Hedman, Ben Mildenhall, Todd Zickler, Jonathan T. Barron, Pratul P. Srinivasan</p>
+            <p><a target="_blank" rel="noopener" href='https://arxiv.org/abs/2112.03907'>论文链接</a></p>
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：本篇文章对原始的NeRF结构进行改进，改善NeRF处理glossy现象的问题。</li>
+<li>相关材料：<ul>
+<li>源码：<a target="_blank" rel="noopener" href="https://github.com/google-research/multinerf">https://github.com/google-research/multinerf</a></li>
+<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=qrdRH9irAlk&amp;ab_channel=DorVerbin">https://www.youtube.com/watch?v=qrdRH9irAlk&amp;ab_channel=DorVerbin</a></li>
+<li>讨论班: 2022-12-18</li>
+</ul>
+</li>
+</ul>
+<p>NeRF在glossy情况下，由于每点的出射光差异很大，因此使用NeRF直接根据出射方向推断出射光是较为困难的，而在Phong模型、无限远环境光的条件下，每点的入射光是一致的。作者将反射方向、roughness、法线方向等显式地作为网络的输入，简化了模型推理的难度；此外，加入了对normal的惩罚，使得density场更加准确。在合成场景下表现很好，但是现实场景下由于不满足无穷远环境光的假设，改善效果不是很好。</p>
 
         
       
