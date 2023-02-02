@@ -1,9 +1,9 @@
-# Awesome-Rendering-Papers
-本仓库存储 GCL 渲染组看过的论文整理后的列表。
+# Awesome-Graphics-Papers
+本仓库存储 GCL 讨论班看过的论文整理后的列表。
 
 本列表采用 hexo 编译，使用模板 `blairos` 修改而成。
 
-查看编译后的站点请点击[这里](https://gcl-rendering.github.io/Awesome-Rendering-Papers/)。
+查看编译后的站点请点击[这里](https://gcl-seminar.github.io/Awesome-Graphics-Papers/)。
 
 ## 仓库内容维护
 

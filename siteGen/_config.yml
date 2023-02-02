@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Awesome Rendering Papers
+title: Awesome Graphics Papers
 subtitle: ''
 description: ''
 keywords:
-author: GCL-Rendering
+author: GCL-Seminar
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://gcl-rendering.github.io/Awesome-Rendering-Papers
+url: https://gcl-seminar.github.io/Awesome-Graphics-Papers
 permalink: :title/
 permalink_defaults:
 pretty_urls:
