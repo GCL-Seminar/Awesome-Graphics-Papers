@@ -5,12 +5,12 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Serialized: {   &quot;rootHierarchy&quot;: {     &quot;name&quot;: &quot;The Rendering Hierarchy&quot;,     &quot;children&quot;: [       {         &quot;name&quot;: &quot;Postprocessing&quot;,         &quot;children&quot;: [           {             &quot;name&quot;: &quot;Anti-aliasi">
+  <meta name="description" content="Serialized: {   &quot;rootHierarchy&quot;: {     &quot;name&quot;: &quot;The Graphics Hierarchy&quot;,     &quot;children&quot;: [       {         &quot;name&quot;: &quot;Rendering&quot;,         &quot;children&quot;: [           {             &quot;name&quot;: &quot;Postprocessing&quot;,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Awesome Graphics Papers">
 <meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/hierarchies.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="Serialized: {   &quot;rootHierarchy&quot;: {     &quot;name&quot;: &quot;The Rendering Hierarchy&quot;,     &quot;children&quot;: [       {         &quot;name&quot;: &quot;Postprocessing&quot;,         &quot;children&quot;: [           {             &quot;name&quot;: &quot;Anti-aliasi">
+<meta property="og:description" content="Serialized: {   &quot;rootHierarchy&quot;: {     &quot;name&quot;: &quot;The Graphics Hierarchy&quot;,     &quot;children&quot;: [       {         &quot;name&quot;: &quot;Rendering&quot;,         &quot;children&quot;: [           {             &quot;name&quot;: &quot;Postprocessing&quot;,">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="GCL-Seminar">
 <meta name="twitter:card" content="summary">
@@ -66,10 +66,18 @@
       <br>
     </header>
     <div class="article-entry" itemprop="articleBody">
+      <h3>快速跳转</h3>
+      <p>
+        <a href="#Rendering">渲染</a> -
+        <a href="#Geometry">几何</a> -
+        <a href="#CAD-CAGD">CAD 和 CAGD</a> -
+        <a href="#Simulation">仿真</a>
+      </p>
+      <hr>
       <!-- root hierarchy -->
       
 
-      <p>The Rendering Hierarchy</p><ul><li>Postprocessing<ul><li>Anti-aliasing</li><li>Super-sampling</li><li>Denoising</li><li>Tonemapping</li><li>Others</li></ul></li><li>Rendering methods<ul><li>Rasterization<ul><li>Global Illumination<ul id="Global Illumination"><li><a href="/Awesome-Graphics-Papers/papers/PACMCGIT/data-driven-prt/">A Data-Driven Paradigm for Precomputed Radiance Transfer</a></li></ul></li><li>Ambient Occulusion</li><li>Reflection</li><li>Indirect lighting</li></ul></li><li>Ray tracing<ul id="Ray tracing"><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/">Unbiased Caustics Rendering Guided by Representative Specular Paths</a></li><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2021/pbflr/">Physically-based Feature Line Rendering</a></li><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2021/vectorization/">Vectorization for Fast, Analytic, and Differentiable Visibility</a></li></ul></li><li>Radiosity</li><li>Photon mapping</li><li>End-to-end Neural Rendering<ul><li>NeRF<ul id="NeRF"><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/icarus/">ICARUS: A Specialized Architecture for Neural Radiance Fields Rendering</a></li><li><a href="/Awesome-Graphics-Papers/papers/CVPR/2022/RefNeRF/">Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</a></li></ul></li></ul></li></ul></li><li>Scene Representation<ul><li>Geometry</li><li>Material</li><li>Light</li><li>Camera</li></ul></li><li>Scene Management<ul><li>Acceleration structure<ul id="Acceleration structure"><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/">Unbiased Caustics Rendering Guided by Representative Specular Paths</a></li></ul></li></ul></li><li>Differentiable Rendering</li></ul>
+      <p>The Graphics Hierarchy</p><ul><li><div id="Rendering">Rendering</div><ul><li><div>Postprocessing</div><ul><li><div>Anti-aliasing</div></li><li><div>Super-sampling</div></li><li><div>Denoising</div></li><li><div>Tonemapping</div></li><li><div>Others</div></li></ul></li><li><div>Rendering methods</div><ul><li><div>Rasterization</div><ul><li><div>Global Illumination</div><ul id="Global Illumination"><li><a href="/Awesome-Graphics-Papers/papers/PACMCGIT/data-driven-prt/">A Data-Driven Paradigm for Precomputed Radiance Transfer</a></li></ul></li><li><div>Ambient Occulusion</div></li><li><div>Reflection</div></li><li><div>Indirect lighting</div></li></ul></li><li><div>Ray tracing</div><ul id="Ray tracing"><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/">Unbiased Caustics Rendering Guided by Representative Specular Paths</a></li><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2021/pbflr/">Physically-based Feature Line Rendering</a></li><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2021/vectorization/">Vectorization for Fast, Analytic, and Differentiable Visibility</a></li></ul></li><li><div>Radiosity</div></li><li><div>Photon mapping</div></li><li><div>End-to-end Neural Rendering</div><ul><li><div>NeRF</div><ul id="NeRF"><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/icarus/">ICARUS: A Specialized Architecture for Neural Radiance Fields Rendering</a></li><li><a href="/Awesome-Graphics-Papers/papers/CVPR/2022/RefNeRF/">Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</a></li></ul></li></ul></li></ul></li><li><div>Scene Representation</div><ul><li><div id="Geometry">Geometry</div></li><li><div>Material</div></li><li><div>Light</div></li><li><div>Camera</div></li></ul></li><li><div>Scene Management</div><ul><li><div>Acceleration structure</div><ul id="Acceleration structure"><li><a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/">Unbiased Caustics Rendering Guided by Representative Specular Paths</a></li></ul></li></ul></li><li><div>Differentiable Rendering</div></li></ul></li><li><div id="Geometry">Geometry</div></li><li><div id="CAD-CAGD">CAD-CAGD</div></li><li><div id="Simulation">Simulation</div></li></ul>
 
     </div>
   </div>
