@@ -7,9 +7,18 @@
       <br>
     </header>
     <div class="article-entry" itemprop="articleBody">
+      <h3>快速跳转</h3>
+      <p>
+        <a href="#Rendering">渲染</a> -
+        <a href="#Geometry">几何</a> -
+        <a href="#CAD-CAGD">CAD 和 CAGD</a> -
+        <a href="#Simulation">仿真</a>
+      </p>
+      <hr>
       <!-- root hierarchy -->
       <%
         const rootHier = page.hierarchies.rootHierarchy;
+        const quickJumpNodes = ['Simulation', 'Geometry', 'Rendering', 'CAD-CAGD'];
 
         const processNode = function(node, depth) {
           const nodeName = node.name;
@@ -17,7 +26,12 @@
           if (depth == 0) {
             output += "<p>" + nodeName + "</p>";
           } else {
-            output += nodeName;
+            if (quickJumpNodes.includes(nodeName)) {
+              output += '<div id="' + nodeName + '">' + nodeName + "</div>"; 
+            } else {
+              output += "<div>" + nodeName + "</div>";
+            }
+            //output += nodeName;
           }
   
           // check for node children
@@ -25,7 +39,7 @@
             let result = node.children.map((node) => {
               return processNode(node, depth+1);
             });
-            output += "<ul><li>";
+            output += '<ul><li>';
             output += result.join('</li><li>');
             output += "</li></ul>";
           } else {
