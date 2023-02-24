@@ -37,6 +37,8 @@ rootHierarchy:
             - name: Acceleration structure
         - name: Differentiable Rendering
     - name: Geometry
+      children:
+        - name: Decomposition
     - name: CAD-CAGD
     - name: Simulation
 
