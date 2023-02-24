@@ -4,7 +4,7 @@ papertitle: 'Differentiable Point-Based Radiance Fields for Efficient View Synth
 paperauthors: Qiang Zhang , Seung-Hwan Baek , Szymon Rusinkiewicz , Felix Heide
 papersource: 'SIGGRAPH-Asia'
 paperurl: 'https://doi.org/10.1145/3550469.3555413'
-papertags: NeRF ,Differentiable Point Rendering
+papertags: NeRF 
 date: 2023-2-18
 ---
 

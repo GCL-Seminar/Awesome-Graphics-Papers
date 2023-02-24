@@ -4,7 +4,7 @@ papertitle: 'SHRED: 3D Shape Region Decomposition with Learned Local Operations'
 paperauthors: R. Kenny Jones , Aalia Habib , Daniel Ritchie     
 papersource: 'SIGGRAPH-Asia'
 paperurl: 'https://rkjones4.github.io/pdf/shred.pdf'
-papertags: Point Cloud Decomposition
+papertags: Decomposition
 date: 2023-02-18
 ---
 
