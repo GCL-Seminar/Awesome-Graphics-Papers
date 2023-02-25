@@ -39,6 +39,7 @@ rootHierarchy:
     - name: Geometry
       children:
         - name: Decomposition
+        - name: Parameterization
     - name: CAD-CAGD
     - name: Simulation
 
