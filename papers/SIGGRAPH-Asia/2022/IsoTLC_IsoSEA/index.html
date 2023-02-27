@@ -5,15 +5,15 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：基于点的神经辐射场。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;sjtuzq&#x2F;point-radiance 视频：无 讨论班: 2023-2-18    本文提出了基于点云的Radiance Field,通过点云的可微渲染，实现了低存储，高效率的场景重建。">
+  <meta name="description" content="基本信息：  简介：本文改进了用于对有边界约束或位置约束的（非单射）参数化恢复单射性的 TLC 和 SEA 能量，提出了考虑到等距畸变的 IsoTLC 和 IsoSEA 能量，在改善等距畸变的同时保留了原始能量理想的特征（如光滑性、高成功率等）。 相关材料： 源码：无 视频：YouTube 补充材料：链接 讨论班: 2023-02-25    TLC 能量：链接，SEA 能量：链接">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/Differentiable%20Point-Based%20Radiance%20Fields%20for%20Efficient%20View%20Synthesis/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：基于点的神经辐射场。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;sjtuzq&#x2F;point-radiance 视频：无 讨论班: 2023-2-18    本文提出了基于点云的Radiance Field,通过点云的可微渲染，实现了低存储，高效率的场景重建。">
+<meta property="og:description" content="基本信息：  简介：本文改进了用于对有边界约束或位置约束的（非单射）参数化恢复单射性的 TLC 和 SEA 能量，提出了考虑到等距畸变的 IsoTLC 和 IsoSEA 能量，在改善等距畸变的同时保留了原始能量理想的特征（如光滑性、高成功率等）。 相关材料： 源码：无 视频：YouTube 补充材料：链接 讨论班: 2023-02-25    TLC 能量：链接，SEA 能量：链接">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-18T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-18T00:00:00.000Z">
+<meta property="article:published_time" content="2023-02-25T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-25T00:00:00.000Z">
 <meta property="article:author" content="GCL-Seminar">
 <meta name="twitter:card" content="summary">
   
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH-Asia/2022/Differentiable Point-Based Radiance Fields for Efficient View Synthesis" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/Differentiable%20Point-Based%20Radiance%20Fields%20for%20Efficient%20View%20Synthesis/" class="article-title" target="_blank" itemprop="url">Differentiable Point-Based Radiance Fields for Efficient View Synthesis</a>
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/" class="article-title" target="_blank" itemprop="url">Isometric Energies for Recovering Injectivity in Constrained Mapping</a>
   </h1>
 
 
@@ -75,8 +75,8 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/Differentiable%20Point-Based%20Radiance%20Fields%20for%20Efficient%20View%20Synthesis/" class="article-date">
-  <time datetime="2023-02-18T00:00:00.000Z" itemprop="datePublished">2023-02-18</time>
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/" class="article-date">
+  <time datetime="2023-02-25T00:00:00.000Z" itemprop="datePublished">2023-02-25</time>
 </a>-->
       <!-- 
 --><!-- by blair 160724 -->
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：Differentiable Point-Based Radiance Fields for Efficient View Synthesis</p>
+          <p>论文标题：Isometric Energies for Recovering Injectivity in Constrained Mapping</p>
           <p>论文来源：SIGGRAPH-Asia 2022
           </p>
-          <p>论文作者：Qiang Zhang , Seung-Hwan Baek , Szymon Rusinkiewicz , Felix Heide</p>
+          <p>论文作者：Xingyi Du, Danny M. Kaufman, Qingnan Zhou, Shahar Z. Kovalsky, Yajie Yan, Noam Aigerman, Tao Ju</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#NeRF">NeRF</a></p>
-          <p><a target="_blank" rel="noopener" href='https://doi.org/10.1145/3550469.3555413'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Parameterization">Parameterization</a></p>
+          <p><a target="_blank" rel="noopener" href='https://duxingyi-charles.github.io/publication/isometric-energies-for-recovering-injectivity-in-constrained-mapping/'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,15 +101,16 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：基于点的神经辐射场。</li>
+<li>简介：本文改进了用于对有边界约束或位置约束的（非单射）参数化恢复单射性的 TLC 和 SEA 能量，提出了考虑到等距畸变的 IsoTLC 和 IsoSEA 能量，在改善等距畸变的同时保留了原始能量理想的特征（如光滑性、高成功率等）。</li>
 <li>相关材料：<ul>
-<li>源码：<a target="_blank" rel="noopener" href="https://github.com/sjtuzq/point-radiance">https://github.com/sjtuzq/point-radiance</a></li>
-<li>视频：无</li>
-<li>讨论班: 2023-2-18</li>
+<li>源码：无</li>
+<li>视频：<a target="_blank" rel="noopener" href="https://youtu.be/ZzmU1WZmunE">YouTube</a></li>
+<li>补充材料：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/isometric-energies-for-recovering-injectivity-in-constrained-mapping/IsoTLC_SEA_supp.pdf">链接</a></li>
+<li>讨论班: 2023-02-25</li>
 </ul>
 </li>
 </ul>
-<p>本文提出了基于点云的Radiance Field,通过点云的可微渲染，实现了低存储，高效率的场景重建。</p>
+<p>TLC 能量：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/lifting-simplices-to-find-injectivity/">链接</a>，SEA 能量：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/optimizing-global-injectivity-for-constrained-parameterization/">链接</a></p>
 
       
      <!-- by blair add this if sentence at 20160725 -->
@@ -168,7 +169,7 @@
     
 <nav id="article-nav">
   
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/DASRAD/" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title"><span>&lt;</span>&nbsp;
         
           (no title)
@@ -177,7 +178,7 @@
     </a>
   
   
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/SHRED/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/Differentiable%20Point-Based%20Radiance%20Fields%20for%20Efficient%20View%20Synthesis/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
