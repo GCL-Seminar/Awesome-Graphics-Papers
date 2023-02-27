@@ -42,7 +42,7 @@ rootHierarchy:
     - name: CAD-CAGD
     - name: Simulation
       children:
-        - name: Sensitivity Analysis
+        - name: Sensitivity analysis
         - name: Robotics
 
 # auxHierarchy:
