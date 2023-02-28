@@ -5,12 +5,12 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：使用分析分布的自适应采样与重建。 相关材料： 源码：无 视频：无 讨论班: 2023-2-26    本文提出了一种基于神经网络的用于离线蒙特卡洛渲染的自适应采样方法，该方法生成由给定spp采样数约束的采样图。与之前的方法相比(DEP，DASR)，该方法对训练数据的要求更少，同时具有更好的渲染质量。">
+  <meta name="description" content="基本信息：  简介：本篇文章给出了在自适应划分的距离组下同时优化网格和 Shader 的 LOD 的优化算法。 相关材料： 源码：无 视频：无 讨论班: 2023-02-26    文章中首先提出了被称为“交替优化”的优化算法，其中首先对 Shader 利用遗传算法进行变异，得到若干变体，再利用网格简化算法来以 image loss 进行网格简化，使得在给定距离上每个变体对应的运算代价小于给定开销">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/DASRAD/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/TVCG/2022/auto-mesh-shader-lod/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：使用分析分布的自适应采样与重建。 相关材料： 源码：无 视频：无 讨论班: 2023-2-26    本文提出了一种基于神经网络的用于离线蒙特卡洛渲染的自适应采样方法，该方法生成由给定spp采样数约束的采样图。与之前的方法相比(DEP，DASR)，该方法对训练数据的要求更少，同时具有更好的渲染质量。">
+<meta property="og:description" content="基本信息：  简介：本篇文章给出了在自适应划分的距离组下同时优化网格和 Shader 的 LOD 的优化算法。 相关材料： 源码：无 视频：无 讨论班: 2023-02-26    文章中首先提出了被称为“交替优化”的优化算法，其中首先对 Shader 利用遗传算法进行变异，得到若干变体，再利用网格简化算法来以 image loss 进行网格简化，使得在给定距离上每个变体对应的运算代价小于给定开销">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-26T00:00:00.000Z">
 <meta property="article:modified_time" content="2023-02-26T00:00:00.000Z">
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH-Asia/2022/DASRAD" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/TVCG/2022/auto-mesh-shader-lod" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/DASRAD/" class="article-title" target="_blank" itemprop="url">Deep Adaptive Sampling and Reconstruction using Analytic Distributions</a>
+    <a href="/Awesome-Graphics-Papers/papers/TVCG/2022/auto-mesh-shader-lod/" class="article-title" target="_blank" itemprop="url">Automatic Mesh and Shader Level of Detail</a>
   </h1>
 
 
@@ -75,7 +75,7 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/DASRAD/" class="article-date">
+      <!--<a href="/Awesome-Graphics-Papers/papers/TVCG/2022/auto-mesh-shader-lod/" class="article-date">
   <time datetime="2023-02-26T00:00:00.000Z" itemprop="datePublished">2023-02-26</time>
 </a>-->
       <!-- 
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：Deep Adaptive Sampling and Reconstruction using Analytic Distributions</p>
-          <p>论文来源：SIGGRAPH-Asia 2022
+          <p>论文标题：Automatic Mesh and Shader Level of Detail</p>
+          <p>论文来源：TVCG 2022
           </p>
-          <p>论文作者：Farnood Salehi , Marco Manzi , Gerhard Roethlin , Romann Weber , Christopher Schroers, Marios Papas</p>
+          <p>论文作者：Yuzhi Liang, Qi Song, Rui Wang, Yuchi Huo, Hujun Bao</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Ray tracing">Ray tracing</a></p>
-          <p><a target="_blank" rel="noopener" href='https://studios.disneyresearch.com/2022/11/30/deep-adaptive-sampling-and-reconstruction-using-analytic-distributions/'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Rasterization pipeline optimization">Rasterization pipeline optimization</a></p>
+          <p><a target="_blank" rel="noopener" href='https://ieeexplore.ieee.org/document/9815871'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,15 +101,17 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：使用分析分布的自适应采样与重建。</li>
+<li>简介：本篇文章给出了在自适应划分的距离组下同时优化网格和 Shader 的 LOD 的优化算法。</li>
 <li>相关材料：<ul>
 <li>源码：无</li>
 <li>视频：无</li>
-<li>讨论班: 2023-2-26</li>
+<li>讨论班: 2023-02-26</li>
 </ul>
 </li>
 </ul>
-<p>本文提出了一种基于神经网络的用于离线蒙特卡洛渲染的自适应采样方法，该方法生成由给定spp采样数约束的采样图。与之前的方法相比(DEP，DASR)，该方法对训练数据的要求更少，同时具有更好的渲染质量。</p>
+<p>文章中首先提出了被称为“交替优化”的优化算法，其中首先对 Shader 利用遗传算法进行变异，得到若干变体，再利用网格简化算法来以 image loss 进行网格简化，使得在给定距离上每个变体对应的运算代价小于给定开销，且误差上满足要求。之后，这些变体会进行排序，前 N% 的变体进入下一轮交替优化，反复多轮后得到结果。</p>
+<p>针对交替优化耗时较长的问题，文章中还提出了“分别优化”的算法。该算法会首先分别对网格和 Shader 独立的进行简化，得到一系列质量单调下降的 Shader 和网格变体列，然后再针对每个距离组选择合适的网格和 Shader 对。为了让 LOD 组间的变化尽可能平滑，文章还设置了最平滑的 LOD 切换路线的查找，以及 LOD 组数量的优化操作。</p>
+<p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/auto-shader-mesh-lod/">https://blog.libreliu.info/paper-reading/auto-shader-mesh-lod/</a></p>
 
       
      <!-- by blair add this if sentence at 20160725 -->
@@ -168,8 +170,16 @@
     
 <nav id="article-nav">
   
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/DASRAD/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/Awesome-Graphics-Papers/papers/TVCG/2022/auto-mesh-shader-lod/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
