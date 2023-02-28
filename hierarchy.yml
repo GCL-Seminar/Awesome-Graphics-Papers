@@ -20,6 +20,7 @@ rootHierarchy:
               - name: Ambient Occulusion
               - name: Reflection
               - name: Indirect lighting
+              - name: Rasterization pipeline optimization
             - name: Ray tracing
             - name: Radiosity
             - name: Photon mapping

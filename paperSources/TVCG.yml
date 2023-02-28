@@ -1,0 +1,9 @@
+# IEEE TVCG paper list
+# (that is, IEEE Transactions on Visualization and Computer Graphics)
+
+sourceInfo:
+  name: TVCG
+  fullname: IEEE Transactions on Visualization and Computer Graphics
+papers:
+  2022:
+  - name: 'Automatic Mesh and Shader Level of Detail'
