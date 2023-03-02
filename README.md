@@ -1,13 +1,43 @@
-# Awesome-Rendering-Papers
-本仓库存储 GCL 渲染组看过的论文整理后的列表。
+# Awesome-Graphics-Papers
+本仓库存储 GCL 讨论班看过的论文整理后的列表。
 
 本列表采用 hexo 编译，使用模板 `blairos` 修改而成。
 
-查看编译后的站点请点击[这里](https://gcl-rendering.github.io/Awesome-Rendering-Papers/)。
+查看编译后的站点请点击[这里](https://gcl-seminar.github.io/Awesome-Graphics-Papers/)。
 
 ## 仓库内容维护
 
 更新请通过 Pull Requests 的方法进行，这样合并到主分支前可以进行数据完整性的检查。
+
+### FAQ
+
+#### 为什么我的 Pull Request 检查失败了？
+
+目前检查失败可能会有多种原因，请查看 Github Actions 中对应的 Action 输出的日志。
+
+目前出现过的问题：
+- 论文元数据校验相关
+  - 现象
+    - 日志中出现类似 `Error: paperMeta validation: 某某某文章 is not in hierarchy leaf nodes` 等以 `paperMeta validation` 打头的输出
+  - 原因
+    - 论文所对应的 tag 中，存在某个 tag 在 `hierarchy.yml` 中没有出现，或者不是 hierarchy 的叶子节点
+    - 论文所指定的会议 (e.g. `papersource: 'SIGGRAPH'`) 所对应的论文数据库 (e.g. `paperSources/SIGGRAPH.yml`) 中，没有找到对应的论文
+  - 提示
+    - 特别要注意大小写，空格等问题。如果不放心，Yaml 和 Markdown front-matter 都是可以使用单引号来 quote 一个字符串的 (e.g. `'字符串'`)
+- Yaml 编辑相关
+  - 现象
+    - 日志中出现类似 `YAMLException: bad indentation of a mapping entry (40:17)` 等以 `YAMLException` 打头的输出
+  - 原因
+    - `hierarchy.yml` 中的 Yaml 需要为合法的 Yaml——与 Python 类似，Yaml 的缩进是有语法含义的。
+  - 提示
+    - 照葫芦画瓢改动的话一般不会出现这个问题
+    - 可以寻找相关的编辑上的教程，或者找将 Yaml 在线转换为 JSON 的工具来辅助确定自己的编辑没有问题。
+    - 也可以确定一下字面值是否正确 quote
+
+#### 为什么编译通过了，但是文章没有出现在网站上？
+
+目前出现过的问题：
+- Markdown 文件的扩展名需要为 `.md`，否则 hexo 不会调用 Markdown 渲染器进行渲染，也就不会应用模板并输出
 
 ### 如何添加新文章：超快速上手指南
 
@@ -82,6 +112,13 @@ date: 讲的或预期讲的讨论班日期，格式 yyyy-mm-dd，如 2022-08-08�
 2. 每个 tag 必须为 leaf tag
 
 ## 开发札记
+
+### 配置开发环境
+
+```bash
+npm install .
+npm run clean && npm run server
+```
 
 ### 和 Hexo 的对应关系
 
