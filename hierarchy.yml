@@ -46,6 +46,8 @@ rootHierarchy:
     - name: Simulation
       children:
         - name: Sensitivity analysis
+        - name: Differentiable Simulation 
         - name: Robotics
+        - name: Particle-based Method 
 # auxHierarchy:
 # - name:
