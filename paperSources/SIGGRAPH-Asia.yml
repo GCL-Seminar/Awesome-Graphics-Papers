@@ -25,6 +25,7 @@ papers:
   - name: 'SHRED: 3D Shape Region Decomposition with Learned Local Operations'
   - name: 'Isometric Energies for Recovering Injectivity in Constrained Mapping'
   - name: 'Deep Adaptive Sampling and Reconstruction using Analytic Distributions'
+  - name: 'Motion Guided Deep Dynamic 3D Garments'
   2021:
   - name: 'Monte Carlo Denoising via Auxiliary Feature Guided Self-Attention'
   - name: 'NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination'
