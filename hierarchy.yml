@@ -49,5 +49,6 @@ rootHierarchy:
         - name: Differentiable Simulation 
         - name: Robotics
         - name: Particle-based Method 
+        - name: Learning-based Simulation
 # auxHierarchy:
 # - name:
