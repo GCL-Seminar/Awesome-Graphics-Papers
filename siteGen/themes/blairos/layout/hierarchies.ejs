@@ -12,13 +12,14 @@
         <a href="#Rendering">渲染</a> -
         <a href="#Geometry">几何</a> -
         <a href="#CAD-CAGD">CAD 和 CAGD</a> -
-        <a href="#Simulation">仿真</a>
+        <a href="#Simulation">仿真</a> -
+        <a href="#DSL-Tools">DSL 和图形工具</a>
       </p>
       <hr>
       <!-- root hierarchy -->
       <%
         const rootHier = page.hierarchies.rootHierarchy;
-        const quickJumpNodes = ['Simulation', 'Geometry', 'Rendering', 'CAD-CAGD'];
+        const quickJumpNodes = ['Simulation', 'Geometry', 'Rendering', 'CAD-CAGD', 'DSL-Tools'];
 
         const processNode = function(node, depth) {
           const nodeName = node.name;
