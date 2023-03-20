@@ -7,3 +7,4 @@ sourceInfo:
 papers:
   2022:
     - name: 'Position-Based Surface Tension Flow'
+    - name: 'Sparsity-Specific Code Optimization using Expression Trees'
