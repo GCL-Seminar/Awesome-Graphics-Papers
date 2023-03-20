@@ -1,0 +1,9 @@
+# SIGGRAPH paper list
+
+sourceInfo:
+  name: SIGGRAPH
+  fullname: ACM SIGGRAPH
+papers:
+  2022:
+    - name: 'Position-Based Surface Tension Flow'
+  

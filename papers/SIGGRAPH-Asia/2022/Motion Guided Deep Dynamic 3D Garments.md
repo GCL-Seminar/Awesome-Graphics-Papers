@@ -1,11 +1,10 @@
 ---
 layout: 'paper-reading'
 papertitle: 'Motion Guided Deep Dynamic 3D Garments'
-paperauthors: Meng Zhang，Duygu Ceylan， Niloy J.Ceylan     
+paperauthors: Meng Zhang，Duygu Ceylan， Niloy J.Ceylan
 papersource: 'SIGGRAPH-Asia'
-paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3550454.3555485‘
-papertags: Physical simulation
-
+paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3550454.3555485'
+papertags: Learning-based Simulation
 date: 2023-03-04
 ---
 
