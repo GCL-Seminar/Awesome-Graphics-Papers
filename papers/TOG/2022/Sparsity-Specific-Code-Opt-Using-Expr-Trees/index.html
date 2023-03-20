@@ -5,15 +5,15 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：PBD 框架下的表面张力算法 相关材料： PBD综述：EG 2017 论文主页 讨论班: 2023-03-18 仿真组    本文提出了在PBD框架下流体表面张力的计算方法。该算法通过局部网格划分，得到每个表面粒子周围的局部几何体，并基于该几何体，计算表面张力约束，整合入PBD框架中。相较于其他方法，该算法具有较高的计算效率较高和鲁棒性。">
+  <meta name="description" content="基本信息：  简介：本篇文章实现了一个对使用稀疏数据的算法的代码做优化的优化器，该优化器可以将未优化的、使用 C++ 编写的操作稀疏数据的算法代码变换为并行的、使用 CPU &#x2F; GPU 进行运算的运算核函数。该方法依赖固定的进行稀疏计算的计算模式。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;PhHerholz&#x2F;SymbolicLib 视频：无 讨论班：2023-03-19">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/TOG/2022/Sparsity-Specific-Code-Opt-Using-Expr-Trees/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：PBD 框架下的表面张力算法 相关材料： PBD综述：EG 2017 论文主页 讨论班: 2023-03-18 仿真组    本文提出了在PBD框架下流体表面张力的计算方法。该算法通过局部网格划分，得到每个表面粒子周围的局部几何体，并基于该几何体，计算表面张力约束，整合入PBD框架中。相较于其他方法，该算法具有较高的计算效率较高和鲁棒性。">
+<meta property="og:description" content="基本信息：  简介：本篇文章实现了一个对使用稀疏数据的算法的代码做优化的优化器，该优化器可以将未优化的、使用 C++ 编写的操作稀疏数据的算法代码变换为并行的、使用 CPU &#x2F; GPU 进行运算的运算核函数。该方法依赖固定的进行稀疏计算的计算模式。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;PhHerholz&#x2F;SymbolicLib 视频：无 讨论班：2023-03-19">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-18T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-03-18T00:00:00.000Z">
+<meta property="article:published_time" content="2023-03-19T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-19T00:00:00.000Z">
 <meta property="article:author" content="GCL-Seminar">
 <meta name="twitter:card" content="summary">
   
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/TOG/2022/Position-Based Surface Tension Flow" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/TOG/2022/Sparsity-Specific-Code-Opt-Using-Expr-Trees" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/" class="article-title" target="_blank" itemprop="url">Position-Based Surface Tension Flow</a>
+    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Sparsity-Specific-Code-Opt-Using-Expr-Trees/" class="article-title" target="_blank" itemprop="url">Sparsity-Specific Code Optimization using Expression Trees</a>
   </h1>
 
 
@@ -75,8 +75,8 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/" class="article-date">
-  <time datetime="2023-03-18T00:00:00.000Z" itemprop="datePublished">2023-03-18</time>
+      <!--<a href="/Awesome-Graphics-Papers/papers/TOG/2022/Sparsity-Specific-Code-Opt-Using-Expr-Trees/" class="article-date">
+  <time datetime="2023-03-19T00:00:00.000Z" itemprop="datePublished">2023-03-19</time>
 </a>-->
       <!-- 
 --><!-- by blair 160724 -->
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：Position-Based Surface Tension Flow</p>
+          <p>论文标题：Sparsity-Specific Code Optimization using Expression Trees</p>
           <p>论文来源：TOG 2022
           </p>
-          <p>论文作者：Jingrui Xing, Liangwang Ruan , Bin Wang, Bo Zhu, Baoquan Chen</p>
+          <p>论文作者：Philipp Herholz, Xuan Tang, Teseo Schneider, Shoaib Kamil, Daniele Panozzo, Olga Sorkine-Hornung</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Fluid Simulation">Fluid Simulation</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Position Based Dynamics">Position Based Dynamics</a></p>
-          <p><a target="_blank" rel="noopener" href='https://lwruan.com/pubs/pbd-st'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#DSL-Tools">DSL-Tools</a></p>
+          <p><a target="_blank" rel="noopener" href='https://dl.acm.org/doi/10.1145/3520484'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,15 +101,15 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：PBD 框架下的表面张力算法</li>
+<li>简介：本篇文章实现了一个对使用稀疏数据的算法的代码做优化的优化器，该优化器可以将未优化的、使用 C++ 编写的操作稀疏数据的算法代码变换为并行的、使用 CPU &#x2F; GPU 进行运算的运算核函数。该方法依赖固定的进行稀疏计算的计算模式。</li>
 <li>相关材料：<ul>
-<li>PBD综述：<a target="_blank" rel="noopener" href="http://www.vci.rwth-aachen.de/publication/0553/">EG 2017</a></li>
-<li><a target="_blank" rel="noopener" href="https://lwruan.com/pubs/pbd-st">论文主页</a></li>
-<li>讨论班: 2023-03-18 仿真组</li>
+<li>源码：<a target="_blank" rel="noopener" href="https://github.com/PhHerholz/SymbolicLib">https://github.com/PhHerholz/SymbolicLib</a></li>
+<li>视频：无</li>
+<li>讨论班：2023-03-19 渲染组</li>
 </ul>
 </li>
 </ul>
-<p>本文提出了在PBD框架下流体表面张力的计算方法。该算法通过局部网格划分，得到每个表面粒子周围的局部几何体，并基于该几何体，计算表面张力约束，整合入PBD框架中。相较于其他方法，该算法具有较高的计算效率较高和鲁棒性。</p>
+<p>本质上就是如何把稀疏矩阵对应的计算图 Lower 到 GPU 和 CPU 并行计算设备上面去的问题。这篇文章可能应该结合 AI 编译器的工作一起看。</p>
 
       
      <!-- by blair add this if sentence at 20160725 -->
@@ -168,16 +168,8 @@
     
 <nav id="article-nav">
   
-    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Sparsity-Specific-Code-Opt-Using-Expr-Trees/" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-title"><span>&lt;</span>&nbsp;
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/Motion%20Guided%20Deep%20Dynamic%203D%20Garments/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
