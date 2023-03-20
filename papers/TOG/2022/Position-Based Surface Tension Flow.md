@@ -4,7 +4,7 @@ papertitle: 'Position-Based Surface Tension Flow'
 paperauthors: Jingrui Xing, Liangwang Ruan , Bin Wang, Bo Zhu, Baoquan Chen
 papersource: 'TOG'
 paperurl: 'https://lwruan.com/pubs/pbd-st'
-papertags: Surface Tension, Fluid Simulation, Position Based Dynamics
+papertags: Fluid Simulation, Position Based Dynamics
 date: 2023-03-18
 ---
 
