@@ -52,6 +52,6 @@ rootHierarchy:
         - name: Learning-based Simulation
         - name: Fluid Simulation
         - name: Position Based Dynamics
-    - name: Graphics DSL & Tools
+    - name: DSL-Tools
 # auxHierarchy:
 # - name:
