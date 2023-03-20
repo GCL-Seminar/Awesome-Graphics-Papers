@@ -4,7 +4,7 @@ papertitle: 'Sparsity-Specific Code Optimization using Expression Trees'
 paperauthors: Philipp Herholz, Xuan Tang, Teseo Schneider, Shoaib Kamil, Daniele Panozzo, Olga Sorkine-Hornung
 papersource: 'TOG'
 paperurl: 'https://dl.acm.org/doi/10.1145/3520484'
-papertags: Graphics DSL & Tools
+papertags: DSL-Tools 
 date: 2023-03-19
 ---
 
