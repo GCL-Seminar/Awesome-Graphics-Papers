@@ -1,9 +1,9 @@
-# SIGGRAPH paper list
+# ToG paper list
+# This is intended for ToG papers that don't appear in SIGGRAPH & SIGGRAPH Asia.
 
 sourceInfo:
-  name: SIGGRAPH
-  fullname: ACM SIGGRAPH
+  name: TOG
+  fullname: ACM Transactions on Graphics
 papers:
   2022:
     - name: 'Position-Based Surface Tension Flow'
-  
