@@ -1,0 +1,9 @@
+# IEEE ISMAR paper list
+# (that is, IEEE International Symposium on Mixed and Augmented Reality)
+
+sourceInfo:
+  name: ISMAR
+  fullname: International Symposium on Mixed and Augmented Reality
+papers:
+  2021:
+  - name: 'Selective Foveated Ray Tracing for Head-Mounted Displays'
