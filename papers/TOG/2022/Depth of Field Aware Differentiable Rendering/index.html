@@ -5,12 +5,12 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：PBD 框架下的表面张力算法 相关材料： PBD综述：EG 2017 论文主页 讨论班: 2023-03-18 仿真组    本文提出了在PBD框架下流体表面张力的计算方法。该算法通过局部网格划分，得到每个表面粒子周围的局部几何体，并基于该几何体，计算表面张力约束，整合入PBD框架中。相较于其他方法，该算法具有较高的计算效率较高和鲁棒性。">
+  <meta name="description" content="基本信息：  简介：可微渲染解决带景深效果的场景重建问题 相关材料： 视频：无 讨论班: 2023-03-18 渲染组    通过求解景深下的可微渲染方程，提出一种可以规避自动微分的景深模糊可微方法，并将其应用于基于Ray Marching的可微渲染（如Nerf和 Plenoxels）和基于光栅化的可微渲染框架中。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/TOG/2022/Depth%20of%20Field%20Aware%20Differentiable%20Rendering/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：PBD 框架下的表面张力算法 相关材料： PBD综述：EG 2017 论文主页 讨论班: 2023-03-18 仿真组    本文提出了在PBD框架下流体表面张力的计算方法。该算法通过局部网格划分，得到每个表面粒子周围的局部几何体，并基于该几何体，计算表面张力约束，整合入PBD框架中。相较于其他方法，该算法具有较高的计算效率较高和鲁棒性。">
+<meta property="og:description" content="基本信息：  简介：可微渲染解决带景深效果的场景重建问题 相关材料： 视频：无 讨论班: 2023-03-18 渲染组    通过求解景深下的可微渲染方程，提出一种可以规避自动微分的景深模糊可微方法，并将其应用于基于Ray Marching的可微渲染（如Nerf和 Plenoxels）和基于光栅化的可微渲染框架中。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-18T00:00:00.000Z">
 <meta property="article:modified_time" content="2023-03-18T00:00:00.000Z">
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/TOG/2022/Position-Based Surface Tension Flow" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/TOG/2022/Depth of Field Aware Differentiable Rendering" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/" class="article-title" target="_blank" itemprop="url">Position-Based Surface Tension Flow</a>
+    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Depth%20of%20Field%20Aware%20Differentiable%20Rendering/" class="article-title" target="_blank" itemprop="url">Depth of Field Aware Differentiable Rendering</a>
   </h1>
 
 
@@ -75,7 +75,7 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/" class="article-date">
+      <!--<a href="/Awesome-Graphics-Papers/papers/TOG/2022/Depth%20of%20Field%20Aware%20Differentiable%20Rendering/" class="article-date">
   <time datetime="2023-03-18T00:00:00.000Z" itemprop="datePublished">2023-03-18</time>
 </a>-->
       <!-- 
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：Position-Based Surface Tension Flow</p>
+          <p>论文标题：Depth of Field Aware Differentiable Rendering</p>
           <p>论文来源：TOG 2022
           </p>
-          <p>论文作者：Jingrui Xing, Liangwang Ruan , Bin Wang, Bo Zhu, Baoquan Chen</p>
+          <p>论文作者：Stanislav Pidhorskyi, Timur Bagautdinov, Shugao Ma, Jason Saragih, Gabriel Schwartz, Yaser Sheikh, Tomas Simon</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Fluid Simulation">Fluid Simulation</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Position Based Dynamics">Position Based Dynamics</a></p>
-          <p><a target="_blank" rel="noopener" href='https://lwruan.com/pubs/pbd-st'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Differentiable Rendering">Differentiable Rendering</a></p>
+          <p><a target="_blank" rel="noopener" href='https://dl.acm.org/doi/10.1145/3550454.3555521'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,15 +101,14 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：PBD 框架下的表面张力算法</li>
+<li>简介：可微渲染解决带景深效果的场景重建问题</li>
 <li>相关材料：<ul>
-<li>PBD综述：<a target="_blank" rel="noopener" href="http://www.vci.rwth-aachen.de/publication/0553/">EG 2017</a></li>
-<li><a target="_blank" rel="noopener" href="https://lwruan.com/pubs/pbd-st">论文主页</a></li>
-<li>讨论班: 2023-03-18 仿真组</li>
+<li>视频：无</li>
+<li>讨论班: 2023-03-18 渲染组</li>
 </ul>
 </li>
 </ul>
-<p>本文提出了在PBD框架下流体表面张力的计算方法。该算法通过局部网格划分，得到每个表面粒子周围的局部几何体，并基于该几何体，计算表面张力约束，整合入PBD框架中。相较于其他方法，该算法具有较高的计算效率较高和鲁棒性。</p>
+<p>通过求解景深下的可微渲染方程，提出一种可以规避自动微分的景深模糊可微方法，并将其应用于基于Ray Marching的可微渲染（如Nerf和 Plenoxels）和基于光栅化的可微渲染框架中。</p>
 
       
      <!-- by blair add this if sentence at 20160725 -->
@@ -168,7 +167,7 @@
     
 <nav id="article-nav">
   
-    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Depth%20of%20Field%20Aware%20Differentiable%20Rendering/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Sparsity-Specific-Code-Opt-Using-Expr-Trees/" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title"><span>&lt;</span>&nbsp;
         
           (no title)
@@ -177,7 +176,7 @@
     </a>
   
   
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/Motion%20Guided%20Deep%20Dynamic%203D%20Garments/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/TOG/2022/Position-Based%20Surface%20Tension%20Flow/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
