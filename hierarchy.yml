@@ -24,6 +24,7 @@ rootHierarchy:
             - name: Ray tracing
             - name: Radiosity
             - name: Photon mapping
+            - name: Foveated Rendering
             - name: End-to-end Neural Rendering
               children:
                 - name: NeRF

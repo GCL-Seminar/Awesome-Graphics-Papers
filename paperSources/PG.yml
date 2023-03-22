@@ -1,0 +1,9 @@
+# PG paper list
+# (that is, Pacific Conference on Computer Graphics and Applications)
+
+sourceInfo:
+  name: PG
+  fullname: Pacific Conference on Computer Graphics and Applications
+papers:
+  2016:
+  - name: 'Foveated Real-Time Ray Tracing for Head-Mounted Displays'
