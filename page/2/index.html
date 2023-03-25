@@ -63,6 +63,228 @@
     </div>
     <hr>
     
+      <article id="paper-reading-papers/TVCG/2022/auto-mesh-shader-lod" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/TVCG/2022/auto-mesh-shader-lod/"><strong>Automatic Mesh and Shader Level of Detail</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/TVCG/2022/auto-mesh-shader-lod/" class="article-date">
+  <time datetime="2023-02-26T00:00:00.000Z" itemprop="datePublished">2023-02-26</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Automatic Mesh and Shader Level of Detail</p>
+            <p>论文来源：TVCG 2022
+            </p>
+            <p>论文作者：Yuzhi Liang, Qi Song, Rui Wang, Yuchi Huo, Hujun Bao</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Rasterization pipeline optimization">Rasterization pipeline optimization</a></p>
+            <p><a target="_blank" rel="noopener" href='https://ieeexplore.ieee.org/document/9815871'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：本篇文章给出了在自适应划分的距离组下同时优化网格和 Shader 的 LOD 的优化算法。</li>
+<li>相关材料：<ul>
+<li>源码：无</li>
+<li>视频：无</li>
+<li>讨论班: 2023-02-26</li>
+</ul>
+</li>
+</ul>
+<p>文章中首先提出了被称为“交替优化”的优化算法，其中首先对 Shader 利用遗传算法进行变异，得到若干变体，再利用网格简化算法来以 image loss 进行网格简化，使得在给定距离上每个变体对应的运算代价小于给定开销，且误差上满足要求。之后，这些变体会进行排序，前 N% 的变体进入下一轮交替优化，反复多轮后得到结果。</p>
+<p>针对交替优化耗时较长的问题，文章中还提出了“分别优化”的算法。该算法会首先分别对网格和 Shader 独立的进行简化，得到一系列质量单调下降的 Shader 和网格变体列，然后再针对每个距离组选择合适的网格和 Shader 对。为了让 LOD 组间的变化尽可能平滑，文章还设置了最平滑的 LOD 切换路线的查找，以及 LOD 组数量的优化操作。</p>
+<p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/auto-shader-mesh-lod/">https://blog.libreliu.info/paper-reading/auto-shader-mesh-lod/</a></p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="paper-reading-papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/"><strong>Isometric Energies for Recovering Injectivity in Constrained Mapping</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/" class="article-date">
+  <time datetime="2023-02-25T00:00:00.000Z" itemprop="datePublished">2023-02-25</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Isometric Energies for Recovering Injectivity in Constrained Mapping</p>
+            <p>论文来源：SIGGRAPH-Asia 2022
+            </p>
+            <p>论文作者：Xingyi Du, Danny M. Kaufman, Qingnan Zhou, Shahar Z. Kovalsky, Yajie Yan, Noam Aigerman, Tao Ju</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Parameterization">Parameterization</a></p>
+            <p><a target="_blank" rel="noopener" href='https://duxingyi-charles.github.io/publication/isometric-energies-for-recovering-injectivity-in-constrained-mapping/'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：本文改进了用于对有边界约束或位置约束的（非单射）参数化恢复单射性的 TLC 和 SEA 能量，提出了考虑到等距畸变的 IsoTLC 和 IsoSEA 能量，在改善等距畸变的同时保留了原始能量理想的特征（如光滑性、高成功率等）。</li>
+<li>相关材料：<ul>
+<li>源码：无</li>
+<li>视频：<a target="_blank" rel="noopener" href="https://youtu.be/ZzmU1WZmunE">YouTube</a></li>
+<li>补充材料：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/isometric-energies-for-recovering-injectivity-in-constrained-mapping/IsoTLC_SEA_supp.pdf">链接</a></li>
+<li>讨论班: 2023-02-25</li>
+</ul>
+</li>
+</ul>
+<p>TLC 能量：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/lifting-simplices-to-find-injectivity/">链接</a>，SEA 能量：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/optimizing-global-injectivity-for-constrained-parameterization/">链接</a></p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="paper-reading-papers/EGSR/2022/DecoupledShading" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/EGSR/2022/DecoupledShading/"><strong>Generalized Decoupled and Object Space Shading System</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/EGSR/2022/DecoupledShading/" class="article-date">
+  <time datetime="2023-02-24T00:00:00.000Z" itemprop="datePublished">2023-02-24</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Generalized Decoupled and Object Space Shading System</p>
+            <p>论文来源：EGSR 2022
+            </p>
+            <p>论文作者：D. Baker and M. Jarzynsk</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Rendering System">Rendering System</a></p>
+            <p><a target="_blank" rel="noopener" href='https://www.oxidegames.com/wp-content/uploads/2022/07/Generalized-Decoupled-and-Object-Space-Shading-System.pdf'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：本篇文章介绍了一种基于物体空间的解耦着色渲染系统，通过在运行时采集渲染所需的element（称为Shadel），并直接在Shadel上完成着色，最后再通过光栅化输出到屏幕结果。整个过程解耦了着色与光栅化，可以使着色和光栅化以不同速率进行计算，提高渲染效率，同时也能够支持多层材质等复杂材质系统</li>
+<li>相关材料：<ul>
+<li>源码：无</li>
+<li>Presentation: <a target="_blank" rel="noopener" href="https://www.oxidegames.com/2022/07/egsr-2022-presentation-generalized-decoupled-shading/">https://www.oxidegames.com/2022/07/egsr-2022-presentation-generalized-decoupled-shading/</a></li>
+<li>前置工作PPT: <a target="_blank" rel="noopener" href="https://www.oxidegames.com/wp-content/uploads/2016/03/Object-Space-Lighting-Rev-21.pdf">https://www.oxidegames.com/wp-content/uploads/2016/03/Object-Space-Lighting-Rev-21.pdf</a></li>
+<li>讨论班: 2023-02-24</li>
+</ul>
+</li>
+</ul>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
       <article id="paper-reading-papers/EG/sph_tutorial" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -582,227 +804,8 @@
 
 
     
-      <article id="paper-reading-papers/SIGGRAPH-Asia/2022/caustics_pathcut" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/"><strong>Unbiased Caustics Rendering Guided by Representative Specular Paths</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/caustics_pathcut/" class="article-date">
-  <time datetime="2022-12-04T00:00:00.000Z" itemprop="datePublished">2022-12-04</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：Unbiased Caustics Rendering Guided by Representative Specular Paths</p>
-            <p>论文来源：SIGGRAPH-Asia 2022
-            </p>
-            <p>论文作者：He Li, Beibei Wang, Changhe Tu, Kun Xu, Nicolas Holzschuch, Ling-Qi Yan</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Ray tracing">Ray tracing</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Acceleration structure">Acceleration structure</a></p>
-            <p><a target="_blank" rel="noopener" href='https://wangningbei.github.io/2022/PathcutGuiding_files/paper_pathcut_guiding.pdf'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本篇文章介绍了一种利用Pathcut方法生成的Pure Specular Path对每次bounce采样方向进行引导，进而加速渲染caustic现象的方法。</li>
-<li>相关材料：<ul>
-<li>源码：<a target="_blank" rel="noopener" href="https://github.com/Lihns/caustics-pathcut">https://github.com/Lihns/caustics-pathcut</a></li>
-<li>视频：无</li>
-<li>讨论班: 2022-12-04</li>
-</ul>
-</li>
-</ul>
-<p>首先利用Pathcut方法生成的Pure Specular Path，然后使用这个代表性路径对bounce处的入射光分布进行估计，根据估计的入射光分布可以引导bounce处的采样</p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="paper-reading-papers/SIGGRAPH-Asia/2022/icarus" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/icarus/"><strong>ICARUS: A Specialized Architecture for Neural Radiance Fields Rendering</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/icarus/" class="article-date">
-  <time datetime="2022-10-16T00:00:00.000Z" itemprop="datePublished">2022-10-16</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：ICARUS: A Specialized Architecture for Neural Radiance Fields Rendering</p>
-            <p>论文来源：SIGGRAPH-Asia 2022
-            </p>
-            <p>论文作者：Chaolin Rao, Huangjie Yu, Haochuan Wan, Jindong Zhou, Yueyang Zheng, Yu Ma, Anpei Chen, Minye Wu, Binzhe Yuan, Pingqiang Zhou, Xin Lou, Jingyi Yu</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#NeRF">NeRF</a></p>
-            <p><a target="_blank" rel="noopener" href='https://arxiv.org/abs/2203.01414'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本篇文章介绍了 NeRF 硬件加速器的实现。</li>
-<li>相关材料：<ul>
-<li>源码：无</li>
-<li>视频：无</li>
-<li>讨论班: 2022-10-16</li>
-</ul>
-</li>
-</ul>
-<p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/icarus-nerf/">https://blog.libreliu.info/paper-reading/icarus-nerf/</a></p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="paper-reading-papers/SIGGRAPH-Asia/2021/pbflr" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2021/pbflr/"><strong>Physically-based Feature Line Rendering</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2021/pbflr/" class="article-date">
-  <time datetime="2022-08-28T00:00:00.000Z" itemprop="datePublished">2022-08-28</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：Physically-based Feature Line Rendering</p>
-            <p>论文来源：SIGGRAPH-Asia 2021
-            </p>
-            <p>论文作者：Rex West</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Ray tracing">Ray tracing</a></p>
-            <p><a target="_blank" rel="noopener" href='http://lines.rexwe.st/'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本篇文章介绍了基于 Path Tracing 的特征线渲染框架的实现。</li>
-<li>相关材料：<ul>
-<li>源码：无</li>
-<li>视频：<a target="_blank" rel="noopener" href="https://youtu.be/2q6F6gF1XYo">SIGGRAPH Asia 2021 Presentation @ YouTube</a></li>
-<li>讨论班: 2022-08-28</li>
-</ul>
-</li>
-</ul>
-<p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/pbr-feature-line/">https://blog.libreliu.info/paper-reading/pbr-feature-line/</a></p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
       <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/Awesome-Graphics-Papers/">&amp;laquo; 上一页</a><a class="page-number" href="/Awesome-Graphics-Papers/">1</a><span class="page-number current">2</span>
+        <a class="extend prev" rel="prev" href="/Awesome-Graphics-Papers/">&amp;laquo; 上一页</a><a class="page-number" href="/Awesome-Graphics-Papers/">1</a><span class="page-number current">2</span><a class="page-number" href="/Awesome-Graphics-Papers/page/3/">3</a><a class="extend next" rel="next" href="/Awesome-Graphics-Papers/page/3/">下一页 &amp;raquo;</a>
       </nav>
     
 
