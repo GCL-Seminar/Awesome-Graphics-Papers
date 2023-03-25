@@ -4,7 +4,7 @@ papertitle: 'A material point method for snow simulation'
 paperauthors: Alexey Stomakhin, Craig Schroeder, Lawrence Chai, Joseph Teran, Andrew Selle
 papersource: 'SIGGRAPH'
 paperurl: 'https://dl.acm.org/doi/10.1145/2461912.2461948'
-papertags: Material Point Method, Plasiticity Simulation
+papertags: Material Point Method, Plasticity Simulation
 date: 2023-03-25
 
 ---
