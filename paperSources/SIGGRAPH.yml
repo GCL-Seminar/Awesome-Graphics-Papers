@@ -7,11 +7,11 @@ papers:
   2013:
     - name: 'A material point method for snow simulation'
   2016:
-    - name: 'Drucker-prager elastoplasticity for sand animation'
+    - name: 'Drucker-Prager Elastoplasticity for Sand Animation'
   2019:
     - name: 'PuppetMaster: robotic animation of marionettes'
   2021:
     - name: 'Vectorization for Fast, Analytic, and Differentiable Visibility'
   2022:
-    - name: 'Energetically consistent inelasticity for optimization time integration'
+    - name: 'Energetically Consistent Inelasticity for Optimization Time Integration'
   

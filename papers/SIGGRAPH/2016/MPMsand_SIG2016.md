@@ -1,6 +1,6 @@
 ---
 layout: 'paper-reading'
-papertitle: 'Drucker-prager elastoplasticity for sand animation'
+papertitle: 'Drucker-Prager Elastoplasticity for Sand Animation'
 paperauthors: Gergely Klar, Theodore Gast, Andre Pradhana, Chuyuan Fu, Craig Schroeder, Chenfanfu Jiang, Joseph Teran
 papersource: 'SIGGRAPH'
 paperurl: 'https://dl.acm.org/doi/10.1145/2897824.2925906'
