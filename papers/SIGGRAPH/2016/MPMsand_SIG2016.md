@@ -4,7 +4,7 @@ papertitle: 'Drucker-prager elastoplasticity for sand animation'
 paperauthors: Gergely Klar, Theodore Gast, Andre Pradhana, Chuyuan Fu, Craig Schroeder, Chenfanfu Jiang, Joseph Teran
 papersource: 'SIGGRAPH'
 paperurl: 'https://dl.acm.org/doi/10.1145/2897824.2925906'
-papertags: Material Point Method, Plasticity Simulation
+papertags: Material Point Method, Plasiticity Simulation
 date: 2023-03-25
 
 ---

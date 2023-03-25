@@ -4,7 +4,7 @@ papertitle: 'Energetically Consistent Inelasticity for Optimization Time Integra
 paperauthors: Xuan Li, Minchen Li, Chenfanfu Jiang.
 papersource: 'SIGGRAPH'
 paperurl: 'https://dl.acm.org/doi/10.1145/3528223.3530072'
-papertags: Material Point Method, Finite Element Method, Plasticity Simulation
+papertags: Material Point Method, Finite Element Method, Plasiticity Simulation
 date: 2023-03-25
 
 ---
