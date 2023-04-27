@@ -5,12 +5,12 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：一个适用于现代流处理器架构的、高性能的渲染框架。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;LuisaGroup&#x2F;LuisaCompute 视频：GAMES 上面有分享： GAMES Webinar 2023 – 267期 讨论班: 2023-4-16    LuisaRender 是一个适用于现代流处理器架构的、高性能的渲染框架。该框架提供了嵌入到 C++ 中的">
+  <meta name="description" content="基本信息：  简介：本文提出了一种以区域采样代替边采样的可微渲染方法，避免了基于物理的可微渲染中繁琐的边采样过程，并能够得到无偏的计算结果，同时文章证明了重参数化方法为其一种特例。 相关材料： 源码：redner 视频：SIGGRAPH Asia 2020 Presentation @ YouTube 讨论班: 2023-04-16">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/LuisaRender/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2020/was/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：一个适用于现代流处理器架构的、高性能的渲染框架。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;LuisaGroup&#x2F;LuisaCompute 视频：GAMES 上面有分享： GAMES Webinar 2023 – 267期 讨论班: 2023-4-16    LuisaRender 是一个适用于现代流处理器架构的、高性能的渲染框架。该框架提供了嵌入到 C++ 中的">
+<meta property="og:description" content="基本信息：  简介：本文提出了一种以区域采样代替边采样的可微渲染方法，避免了基于物理的可微渲染中繁琐的边采样过程，并能够得到无偏的计算结果，同时文章证明了重参数化方法为其一种特例。 相关材料： 源码：redner 视频：SIGGRAPH Asia 2020 Presentation @ YouTube 讨论班: 2023-04-16">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-16T00:00:00.000Z">
 <meta property="article:modified_time" content="2023-04-16T00:00:00.000Z">
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH-Asia/2022/LuisaRender" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH-Asia/2020/was" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/LuisaRender/" class="article-title" target="_blank" itemprop="url">LuisaRender: A High-Performance Rendering Framework with Layered and Unified Interfaces on Stream Architectures</a>
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2020/was/" class="article-title" target="_blank" itemprop="url">Unbiased Warped-Area Sampling for Differentiable Rendering</a>
   </h1>
 
 
@@ -75,7 +75,7 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/LuisaRender/" class="article-date">
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2020/was/" class="article-date">
   <time datetime="2023-04-16T00:00:00.000Z" itemprop="datePublished">2023-04-16</time>
 </a>-->
       <!-- 
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：LuisaRender: A High-Performance Rendering Framework with Layered and Unified Interfaces on Stream Architectures</p>
-          <p>论文来源：SIGGRAPH-Asia 2022
+          <p>论文标题：Unbiased Warped-Area Sampling for Differentiable Rendering</p>
+          <p>论文来源：SIGGRAPH-Asia 2020
           </p>
-          <p>论文作者：Shaokun Zheng, Zhiqian Zhou, Xin Chen, Difei Yan, Chuyan Zhang, Yuefeng Geng, Yan Gu, Kun Xu</p>
+          <p>论文作者：Sai Praveen Bangaru, Tzu-Mao Li, Frédo Durand</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Rendering System">Rendering System</a></p>
-          <p><a target="_blank" rel="noopener" href='https://dl.acm.org/doi/10.1145/3550454.3555463'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Differentiable Rendering">Differentiable Rendering</a></p>
+          <p><a target="_blank" rel="noopener" href='http://people.csail.mit.edu/sbangaru/projects/was-2020/index.html'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,15 +101,14 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：一个适用于现代流处理器架构的、高性能的渲染框架。</li>
+<li>简介：本文提出了一种以区域采样代替边采样的可微渲染方法，避免了基于物理的可微渲染中繁琐的边采样过程，并能够得到无偏的计算结果，同时文章证明了重参数化方法为其一种特例。</li>
 <li>相关材料：<ul>
-<li>源码：<a target="_blank" rel="noopener" href="https://github.com/LuisaGroup/LuisaCompute">https://github.com/LuisaGroup/LuisaCompute</a></li>
-<li>视频：GAMES 上面有分享： <a target="_blank" rel="noopener" href="https://games-cn.org/games-webinar-20230309-267/">GAMES Webinar 2023 – 267期</a></li>
-<li>讨论班: 2023-4-16</li>
+<li>源码：<a target="_blank" rel="noopener" href="https://github.com/BachiLi/redner/tree/experimental">redner</a></li>
+<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=1GfvHI8Dm_g">SIGGRAPH Asia 2020 Presentation @ YouTube</a></li>
+<li>讨论班: 2023-04-16</li>
 </ul>
 </li>
 </ul>
-<p>LuisaRender 是一个适用于现代流处理器架构的、高性能的渲染框架。该框架提供了嵌入到 C++ 中的 DSL、现代图形 API 的资源封装，后端 JIT 代码生成和编译，以及一个优化的 Monte Carlo 渲染器。</p>
 
       
      <!-- by blair add this if sentence at 20160725 -->
@@ -168,7 +167,7 @@
     
 <nav id="article-nav">
   
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2020/was/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/EGSR/2022/VisualPolarFoveatedPT/" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title"><span>&lt;</span>&nbsp;
         
           (no title)
@@ -177,7 +176,7 @@
     </a>
   
   
-    <a href="/Awesome-Graphics-Papers/papers/VISIGRAPP/2020/MachineLearningFoveatedPT/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/LuisaRender/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
