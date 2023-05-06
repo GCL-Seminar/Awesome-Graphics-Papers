@@ -1,0 +1,8 @@
+# Acta Mechanica Sinica paper list
+
+sourceInfo:
+  name: Acta Mechanica Sinica
+  fullname: Acta Mechanica Sinica
+papers:
+  2009:
+  - name: 'Manufacturing Tolerant Topology Optimization'
