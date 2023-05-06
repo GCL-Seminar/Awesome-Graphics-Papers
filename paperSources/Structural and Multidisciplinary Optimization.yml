@@ -1,0 +1,8 @@
+# Structural and Multidisciplinary Optimization paper list
+
+sourceInfo:
+  name: Structural and Multidisciplinary Optimization
+  fullname: Structural and Multidisciplinary Optimization
+papers:
+  2011:
+  - name: 'On Projection Methods, Convergence and Robust Formulations in Topology Optimization'
