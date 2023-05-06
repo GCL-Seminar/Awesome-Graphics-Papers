@@ -6,3 +6,5 @@ sourceInfo:
 papers:
   2022:
     - name: "Generalized Decoupled and Object Space Shading System"
+  2019:
+    - name: "Foveated Real-Time Path Tracing in Visual-Polar Space"
