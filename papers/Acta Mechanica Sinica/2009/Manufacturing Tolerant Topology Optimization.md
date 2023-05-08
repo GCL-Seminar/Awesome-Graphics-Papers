@@ -5,7 +5,7 @@ paperauthors: Ole Sigmund
 papersource: 'Acta Mechanica Sinica'
 paperurl: 'http://link.springer.com/10.1007/s10409-009-0240-z'
 papertags: Topology Optimization
-date: 2009-03-07
+date: 2023-05-06
 ---
 
 基本信息：
