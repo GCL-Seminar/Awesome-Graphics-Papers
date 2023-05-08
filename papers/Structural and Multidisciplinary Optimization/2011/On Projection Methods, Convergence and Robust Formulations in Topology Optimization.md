@@ -5,7 +5,7 @@ paperauthors: Ole Sigmund
 papersource: 'Structural and Multidisciplinary Optimization'
 paperurl: 'https://link.springer.com/10.1007/s00158-010-0602-y'
 papertags: Topology Optimization
-date: 2010-12-24
+date: 2023-05-06
 ---
 
 基本信息：
