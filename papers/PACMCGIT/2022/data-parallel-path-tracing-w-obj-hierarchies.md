@@ -14,4 +14,4 @@ date: 2023-05-14
   - 源码：无
   - 幻灯片：[HPG 2022 上的 Slide](https://www.highperformancegraphics.org/slides22/Brix-HPG-FINAL.pdf)
   - 视频：[YouTube](https://youtu.be/HM6Leo6_ZLk?t=7442)
-  - 讨论班: 2022-10-16
+  - 讨论班: 2023-05-14
