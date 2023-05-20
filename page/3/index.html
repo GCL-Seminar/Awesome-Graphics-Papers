@@ -63,6 +63,77 @@
     </div>
     <hr>
     
+      <article id="paper-reading-papers/EG/sph_tutorial" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/EG/sph_tutorial/"><strong>Smoothed Particle Hydrodynamics Techniques for the Physics Based Simulation of Fluids and Solids</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/EG/sph_tutorial/" class="article-date">
+  <time datetime="2023-02-18T00:00:00.000Z" itemprop="datePublished">2023-02-18</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Smoothed Particle Hydrodynamics Techniques for the Physics Based Simulation of Fluids and Solids</p>
+            <p>论文来源：EG 2019
+            </p>
+            <p>论文作者：Dan Koschier, Jan Bender, Barbara Solenthaler, Matthias Teschner</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Particle-based Method">Particle-based Method</a></p>
+            <p><a target="_blank" rel="noopener" href='https://interactivecomputergraphics.github.io/SPH-Tutorial/'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：<br>(第一部分) SPH是一种在图形学中被广泛使用的基于粒子表示的仿真方法，能够高效地仿真多种属性的材料，如流体、高粘度材料、弹性体等，并且今年来的研究使得SPH能够鲁棒地处理多种材料之间的交互。在Seminar的第一部分，我们介绍了SPH的粒子采样近似连续函数和微分算子的基础概念，并介绍了流体仿真的一般求解流程（算子分裂operator splitting），以及流体不可压缩性的显式（SESPH）&#x2F;隐式（PCISPH，IISPH，DFSPH）求解方法。<br>(第二部分) SPH的固液边界本质上就是偏微分方程的边界条件，其本质困难在于物理场在固体边界附近还没有合适的表达。其中，密度场的表达是依赖于固体的表达的：若固体是基于粒子离散，则常用方法为单层不均匀采样，但是会有表面崎岖的问题；若固体是基于网格离散，则一般边界处采用连续碰撞检测结合碰撞冲量的方式解决穿透，但是会带来效率降低的问题；若固体是隐式表达，例如如今的SOTA方法volume map，这就能比较好地解决上述问题。此外，压强梯度场的表达主要依托于固体区域上压强场的延拓，分为镜像法和外插法。镜像法即算某液体粒子处压强梯度时，直接用该液体粒子处的压强代替固体伪粒子处压强，外插法即用SPH&#x2F;MLS等方式通过所有邻居液体粒子插值出每个空间位置处的合适压强。<br> （第三部分）介绍了SPH流体模拟中引入粘性、涡量和表面张力的主要方法。粘性力主要描述了流体动能的耗散，主要有显式和隐式求解两类方法。借鉴了有限差分的显式方法，能够保持守恒量，并有较高的计算效率，是粘性力计算的主流方法。在涡量和表面张力的研究上，主要可以从宏观或微观上入手。引入涡量有助于降低SPH格式的数值耗散现象，能够更好保持流体的漩涡运动。表面张力描述了液体分子之间的相互吸引力，有助于更真实的流体表面的形成。</li>
+<li>相关材料：<ul>
+<li>网站：<a target="_blank" rel="noopener" href="https://interactivecomputergraphics.github.io/SPH-Tutorial">https://interactivecomputergraphics.github.io/SPH-Tutorial</a></li>
+<li>讨论班: 2023-02-18</li>
+</ul>
+</li>
+</ul>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
       <article id="paper-reading-papers/SIGGRAPH-Asia/2022/Differentiable Point-Based Radiance Fields for Efficient View Synthesis" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -209,89 +280,6 @@
 
 
     
-      <article id="paper-reading-papers/PACMCGIT/data-driven-prt" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/PACMCGIT/data-driven-prt/"><strong>A Data-Driven Paradigm for Precomputed Radiance Transfer</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/PACMCGIT/data-driven-prt/" class="article-date">
-  <time datetime="2022-12-18T00:00:00.000Z" itemprop="datePublished">2022-12-18</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：A Data-Driven Paradigm for Precomputed Radiance Transfer</p>
-            <p>论文来源：PACMCGIT 2022
-            </p>
-            <p>论文作者：Laurent Belcour, Thomas Deliot, Wilhem Barbier, Cyril Soler</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Global Illumination">Global Illumination</a></p>
-            <p><a target="_blank" rel="noopener" href='https://arxiv.org/abs/2206.13112'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：传统的 PRT 是将漫反射材质的出射 irradiance 分解成为不同的、以 SH 基函数定义的光照为基础的响应的线性组合；本篇文章将漫反射材质的出射 irradiance 分解成不同 light configuration 下出射光响应的线性组合，并且用矩阵降维的方法压缩存储。</li>
-<li>相关材料：<ul>
-<li>源码：有个 Notebook，<a target="_blank" rel="noopener" href="https://belcour.github.io/blog/supp/2022-data-driven-prt/index.html">链接</a><ul>
-<li>看这个 URL，感觉他之后会写博客介绍？但是 <a target="_blank" rel="noopener" href="https://belcour.github.io/blog">https://belcour.github.io/blog</a> 里面目前没看到</li>
-</ul>
-</li>
-<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=k3hzcrjoFbc">YouTube</a><ul>
-<li>(!) 视频比 paper 好懂一些</li>
-</ul>
-</li>
-<li>讨论班: 2022-12-18<ul>
-<li>时间比较紧，看的也不是很明白，没写 ppt</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/data-driven-prt/">https://blog.libreliu.info/paper-reading/data-driven-prt/</a></p>
-<p>另一个可能有用的材料：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265463655">游戏中的全局光照(四) Lightmap、LightProbe和Irradiance Volume - 知乎专栏</a></p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
       <article id="paper-reading-papers/CVPR/2022/RefNeRF" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -347,6 +335,89 @@
 </li>
 </ul>
 <p>NeRF在glossy情况下，由于每点的出射光差异很大，因此使用NeRF直接根据出射方向推断出射光是较为困难的，而在Phong模型、无限远环境光的条件下，每点的入射光是一致的。作者将反射方向、roughness、法线方向等显式地作为网络的输入，简化了模型推理的难度；此外，加入了对normal的惩罚，使得density场更加准确。在合成场景下表现很好，但是现实场景下由于不满足无穷远环境光的假设，改善效果不是很好。</p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="paper-reading-papers/PACMCGIT/2022/data-driven-prt" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/PACMCGIT/2022/data-driven-prt/"><strong>A Data-Driven Paradigm for Precomputed Radiance Transfer</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/PACMCGIT/2022/data-driven-prt/" class="article-date">
+  <time datetime="2022-12-18T00:00:00.000Z" itemprop="datePublished">2022-12-18</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：A Data-Driven Paradigm for Precomputed Radiance Transfer</p>
+            <p>论文来源：PACMCGIT 2022
+            </p>
+            <p>论文作者：Laurent Belcour, Thomas Deliot, Wilhem Barbier, Cyril Soler</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Global Illumination">Global Illumination</a></p>
+            <p><a target="_blank" rel="noopener" href='https://arxiv.org/abs/2206.13112'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：传统的 PRT 是将漫反射材质的出射 irradiance 分解成为不同的、以 SH 基函数定义的光照为基础的响应的线性组合；本篇文章将漫反射材质的出射 irradiance 分解成不同 light configuration 下出射光响应的线性组合，并且用矩阵降维的方法压缩存储。</li>
+<li>相关材料：<ul>
+<li>源码：有个 Notebook，<a target="_blank" rel="noopener" href="https://belcour.github.io/blog/supp/2022-data-driven-prt/index.html">链接</a><ul>
+<li>看这个 URL，感觉他之后会写博客介绍？但是 <a target="_blank" rel="noopener" href="https://belcour.github.io/blog">https://belcour.github.io/blog</a> 里面目前没看到</li>
+</ul>
+</li>
+<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=k3hzcrjoFbc">YouTube</a><ul>
+<li>(!) 视频比 paper 好懂一些</li>
+</ul>
+</li>
+<li>讨论班: 2022-12-18<ul>
+<li>时间比较紧，看的也不是很明白，没写 ppt</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/data-driven-prt/">https://blog.libreliu.info/paper-reading/data-driven-prt/</a></p>
+<p>另一个可能有用的材料：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265463655">游戏中的全局光照(四) Lightmap、LightProbe和Irradiance Volume - 知乎专栏</a></p>
 
         
       
