@@ -51,7 +51,7 @@ rootHierarchy:
         - name: Robotics
         - name: Particle-based Method 
         - name: Smoothed Particle Hydrodynamics
-        - name: Fluid-Solid Coupling
+        - name: Fluid Solid Coupling
         - name: Learning-based Simulation
         - name: Fluid Simulation
         - name: Position Based Dynamics
