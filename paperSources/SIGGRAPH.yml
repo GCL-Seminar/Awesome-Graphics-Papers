@@ -14,4 +14,5 @@ papers:
     - name: 'Vectorization for Fast, Analytic, and Differentiable Visibility'
   2022:
     - name: 'Energetically Consistent Inelasticity for Optimization Time Integration'
-  
+  2023:
+    - name: 'A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling'
