@@ -5,7 +5,7 @@ papertitle: 'Smoothed Particle Hydrodynamics Techniques for the Physics Based Si
 paperauthors: Dan Koschier, Jan Bender, Barbara Solenthaler, Matthias Teschner 
 papersource: 'EG'
 paperurl: 'https://interactivecomputergraphics.github.io/SPH-Tutorial/'
-papertags: Particle-based Method
+papertags: Particle-based Method, Smoothed Particle Hydrodynamics
 date: 2023-02-18
 ---
 
