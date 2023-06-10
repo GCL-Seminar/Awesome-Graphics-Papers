@@ -63,6 +63,74 @@
     </div>
     <hr>
     
+      <article id="paper-reading-papers/SIGGRAPH/2023/A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/"><strong>A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/" class="article-date">
+  <time datetime="2023-06-09T00:00:00.000Z" itemprop="datePublished">2023-06-09</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling</p>
+            <p>论文来源：SIGGRAPH 2023
+            </p>
+            <p>论文作者：Tianyi Xie, Minchen Li, Yin Yang, and Chenfanfu Jiang</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Finite Element Method">Finite Element Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Particle-based Method">Particle-based Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Smoothed Particle Hydrodynamics">Smoothed Particle Hydrodynamics</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Fluid Solid Coupling">Fluid Solid Coupling</a></p>
+            <p><a target="_blank" rel="noopener" href='https://drive.google.com/uc?export=view&id=1Nv47RP2tNunw3w7-eZy3qNu3InXRPB2q'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：本文提出了一种用于FEM可变形体与SPH流体之间的强流固耦合算法。首先，本文将SPH流体的运动、不可压条件等求解转化为能量函数优化问题。其次，本文将流固耦合问题转化为流体粒子与固体网格之间的碰撞问题，通过引入了IPC模型，在运动求解的同时处理了碰撞与耦合，并提出了强流固耦合对应的能量函数优化问题。最后，本文针对提出的优化问题使用了交替迭代方法，借助Contact Proxy实现了快速且稳定的求解。</li>
+<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kVByO8_1CT8">youtube</a></li>
+<li>讨论班：2023-06-03</li>
+</ul>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
       <article id="paper-reading-papers/PACMCGIT/2022/data-parallel-path-tracing-w-obj-hierarchies" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -713,81 +781,8 @@
 
 
     
-      <article id="paper-reading-papers/SIGGRAPH/2022/ImplicitMPMplastic_SIG2022" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2022/ImplicitMPMplastic_SIG2022/"><strong>Energetically Consistent Inelasticity for Optimization Time Integration</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2022/ImplicitMPMplastic_SIG2022/" class="article-date">
-  <time datetime="2023-03-25T00:00:00.000Z" itemprop="datePublished">2023-03-25</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：Energetically Consistent Inelasticity for Optimization Time Integration</p>
-            <p>论文来源：SIGGRAPH 2022
-            </p>
-            <p>论文作者：Xuan Li, Minchen Li, Chenfanfu Jiang.</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Material Point Method">Material Point Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Finite Element Method">Finite Element Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Plasticity Simulation">Plasticity Simulation</a></p>
-            <p><a target="_blank" rel="noopener" href='https://dl.acm.org/doi/10.1145/3528223.3530072'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本篇文章介绍了一种弹塑性形变梯度的隐式能量最优化模拟方法。为了实现这个目标，作者尝试将常见的弹塑性物理模型用统一的能量函数进行表示。基于这种隐式格式，塑性体模拟可以达到以往显式和半隐式格式无法达到的稳定性。</li>
-<li>相关材料：<ul>
-<li>源码：无</li>
-<li>Demo视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=YvvoSu8NK3A">https://www.youtube.com/watch?v=YvvoSu8NK3A</a></li>
-<li>Presentation视频：无</li>
-<li>讨论班: 2023-03-25</li>
-</ul>
-</li>
-</ul>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
       <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/Awesome-Graphics-Papers/page/2/">2</a><a class="page-number" href="/Awesome-Graphics-Papers/page/3/">3</a><a class="extend next" rel="next" href="/Awesome-Graphics-Papers/page/2/">下一页 &amp;raquo;</a>
+        <span class="page-number current">1</span><a class="page-number" href="/Awesome-Graphics-Papers/page/2/">2</a><a class="page-number" href="/Awesome-Graphics-Papers/page/3/">3</a><a class="page-number" href="/Awesome-Graphics-Papers/page/4/">4</a><a class="extend next" rel="next" href="/Awesome-Graphics-Papers/page/2/">下一页 &amp;raquo;</a>
       </nav>
     
 

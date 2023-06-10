@@ -5,15 +5,15 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：本文提出了一种同时支持空间和对象层次结构两种划分方式的，新的场景数据划分方法。同时，利用多种减少数据通信的策略，本文的方法可以同时实现降低通信开销、降低内存占用、增加性能的目标，进而可以实现在相对低端的互联网络上实现 interactive 级别的渲染性能。 相关材料： 源码：无 幻灯片：HPG 2022 上的 Slide 视频：YouTube 讨论班: 2023-05-14">
+  <meta name="description" content="基本信息：  简介：本文提出了一种用于FEM可变形体与SPH流体之间的强流固耦合算法。首先，本文将SPH流体的运动、不可压条件等求解转化为能量函数优化问题。其次，本文将流固耦合问题转化为流体粒子与固体网格之间的碰撞问题，通过引入了IPC模型，在运动求解的同时处理了碰撞与耦合，并提出了强流固耦合对应的能量函数优化问题。最后，本文针对提出的优化问题使用了交替迭代方法，借助Contact Proxy实现">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/PACMCGIT/2022/data-parallel-path-tracing-w-obj-hierarchies/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：本文提出了一种同时支持空间和对象层次结构两种划分方式的，新的场景数据划分方法。同时，利用多种减少数据通信的策略，本文的方法可以同时实现降低通信开销、降低内存占用、增加性能的目标，进而可以实现在相对低端的互联网络上实现 interactive 级别的渲染性能。 相关材料： 源码：无 幻灯片：HPG 2022 上的 Slide 视频：YouTube 讨论班: 2023-05-14">
+<meta property="og:description" content="基本信息：  简介：本文提出了一种用于FEM可变形体与SPH流体之间的强流固耦合算法。首先，本文将SPH流体的运动、不可压条件等求解转化为能量函数优化问题。其次，本文将流固耦合问题转化为流体粒子与固体网格之间的碰撞问题，通过引入了IPC模型，在运动求解的同时处理了碰撞与耦合，并提出了强流固耦合对应的能量函数优化问题。最后，本文针对提出的优化问题使用了交替迭代方法，借助Contact Proxy实现">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-14T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-05-14T00:00:00.000Z">
+<meta property="article:published_time" content="2023-06-09T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-09T00:00:00.000Z">
 <meta property="article:author" content="GCL-Seminar">
 <meta name="twitter:card" content="summary">
   
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/PACMCGIT/2022/data-parallel-path-tracing-w-obj-hierarchies" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH/2023/A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/PACMCGIT/2022/data-parallel-path-tracing-w-obj-hierarchies/" class="article-title" target="_blank" itemprop="url">Data Parallel Path Tracing with Object Hierarchies</a>
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/" class="article-title" target="_blank" itemprop="url">A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling</a>
   </h1>
 
 
@@ -75,8 +75,8 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/PACMCGIT/2022/data-parallel-path-tracing-w-obj-hierarchies/" class="article-date">
-  <time datetime="2023-05-14T00:00:00.000Z" itemprop="datePublished">2023-05-14</time>
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/" class="article-date">
+  <time datetime="2023-06-09T00:00:00.000Z" itemprop="datePublished">2023-06-09</time>
 </a>-->
       <!-- 
 --><!-- by blair 160724 -->
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：Data Parallel Path Tracing with Object Hierarchies</p>
-          <p>论文来源：PACMCGIT 2022
+          <p>论文标题：A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling</p>
+          <p>论文来源：SIGGRAPH 2023
           </p>
-          <p>论文作者：Ingo Wald, Steven G Parker</p>
+          <p>论文作者：Tianyi Xie, Minchen Li, Yin Yang, and Chenfanfu Jiang</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Rendering System">Rendering System</a></p>
-          <p><a target="_blank" rel="noopener" href='https://dl.acm.org/doi/pdf/10.1145/3543861'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Finite Element Method">Finite Element Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Particle-based Method">Particle-based Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Smoothed Particle Hydrodynamics">Smoothed Particle Hydrodynamics</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Fluid Solid Coupling">Fluid Solid Coupling</a></p>
+          <p><a target="_blank" rel="noopener" href='https://drive.google.com/uc?export=view&id=1Nv47RP2tNunw3w7-eZy3qNu3InXRPB2q'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,14 +101,9 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：本文提出了一种同时支持空间和对象层次结构两种划分方式的，新的场景数据划分方法。同时，利用多种减少数据通信的策略，本文的方法可以同时实现降低通信开销、降低内存占用、增加性能的目标，进而可以实现在相对低端的互联网络上实现 interactive 级别的渲染性能。</li>
-<li>相关材料：<ul>
-<li>源码：无</li>
-<li>幻灯片：<a target="_blank" rel="noopener" href="https://www.highperformancegraphics.org/slides22/Brix-HPG-FINAL.pdf">HPG 2022 上的 Slide</a></li>
-<li>视频：<a target="_blank" rel="noopener" href="https://youtu.be/HM6Leo6_ZLk?t=7442">YouTube</a></li>
-<li>讨论班: 2023-05-14</li>
-</ul>
-</li>
+<li>简介：本文提出了一种用于FEM可变形体与SPH流体之间的强流固耦合算法。首先，本文将SPH流体的运动、不可压条件等求解转化为能量函数优化问题。其次，本文将流固耦合问题转化为流体粒子与固体网格之间的碰撞问题，通过引入了IPC模型，在运动求解的同时处理了碰撞与耦合，并提出了强流固耦合对应的能量函数优化问题。最后，本文针对提出的优化问题使用了交替迭代方法，借助Contact Proxy实现了快速且稳定的求解。</li>
+<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kVByO8_1CT8">youtube</a></li>
+<li>讨论班：2023-06-03</li>
 </ul>
 
       
@@ -168,16 +163,8 @@
     
 <nav id="article-nav">
   
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-title"><span>&lt;</span>&nbsp;
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/Awesome-Graphics-Papers/papers/Acta%20Mechanica%20Sinica/2009/Manufacturing%20Tolerant%20Topology%20Optimization/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/PACMCGIT/2022/data-parallel-path-tracing-w-obj-hierarchies/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
