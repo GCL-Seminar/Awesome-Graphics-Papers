@@ -63,6 +63,79 @@
     </div>
     <hr>
     
+      <article id="paper-reading-papers/SIGGRAPH/2016/MPMsand_SIG2016" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2016/MPMsand_SIG2016/"><strong>Drucker-Prager Elastoplasticity for Sand Animation</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2016/MPMsand_SIG2016/" class="article-date">
+  <time datetime="2023-03-25T00:00:00.000Z" itemprop="datePublished">2023-03-25</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Drucker-Prager Elastoplasticity for Sand Animation</p>
+            <p>论文来源：SIGGRAPH 2016
+            </p>
+            <p>论文作者：Gergely Klar, Theodore Gast, Andre Pradhana, Chuyuan Fu, Craig Schroeder, Chenfanfu Jiang, Joseph Teran</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Material Point Method">Material Point Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Plasticity Simulation">Plasticity Simulation</a></p>
+            <p><a target="_blank" rel="noopener" href='https://dl.acm.org/doi/10.1145/2897824.2925906'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：本篇文章介绍了一种基于Drucker-Prager的弹塑性形变梯度的分解方法。基于这种弹塑性分解，可以实现视觉上更进一步的沙子物理模拟。</li>
+<li>相关材料：<ul>
+<li>源码：无</li>
+<li>Demo视频：<a target="_blank" rel="noopener" href="https://vimeo.com/163601169">https://vimeo.com/163601169</a></li>
+<li>Presentation视频：无</li>
+<li>讨论班: 2023-03-25</li>
+</ul>
+</li>
+</ul>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
       <article id="paper-reading-papers/SIGGRAPH/2022/ImplicitMPMplastic_SIG2022" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -703,80 +776,6 @@
 <p>文章中首先提出了被称为“交替优化”的优化算法，其中首先对 Shader 利用遗传算法进行变异，得到若干变体，再利用网格简化算法来以 image loss 进行网格简化，使得在给定距离上每个变体对应的运算代价小于给定开销，且误差上满足要求。之后，这些变体会进行排序，前 N% 的变体进入下一轮交替优化，反复多轮后得到结果。</p>
 <p>针对交替优化耗时较长的问题，文章中还提出了“分别优化”的算法。该算法会首先分别对网格和 Shader 独立的进行简化，得到一系列质量单调下降的 Shader 和网格变体列，然后再针对每个距离组选择合适的网格和 Shader 对。为了让 LOD 组间的变化尽可能平滑，文章还设置了最平滑的 LOD 切换路线的查找，以及 LOD 组数量的优化操作。</p>
 <p>自己写的博客：<a target="_blank" rel="noopener" href="https://blog.libreliu.info/paper-reading/auto-shader-mesh-lod/">https://blog.libreliu.info/paper-reading/auto-shader-mesh-lod/</a></p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="paper-reading-papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/"><strong>Isometric Energies for Recovering Injectivity in Constrained Mapping</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH-Asia/2022/IsoTLC_IsoSEA/" class="article-date">
-  <time datetime="2023-02-25T00:00:00.000Z" itemprop="datePublished">2023-02-25</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：Isometric Energies for Recovering Injectivity in Constrained Mapping</p>
-            <p>论文来源：SIGGRAPH-Asia 2022
-            </p>
-            <p>论文作者：Xingyi Du, Danny M. Kaufman, Qingnan Zhou, Shahar Z. Kovalsky, Yajie Yan, Noam Aigerman, Tao Ju</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Parameterization">Parameterization</a></p>
-            <p><a target="_blank" rel="noopener" href='https://duxingyi-charles.github.io/publication/isometric-energies-for-recovering-injectivity-in-constrained-mapping/'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本文改进了用于对有边界约束或位置约束的（非单射）参数化恢复单射性的 TLC 和 SEA 能量，提出了考虑到等距畸变的 IsoTLC 和 IsoSEA 能量，在改善等距畸变的同时保留了原始能量理想的特征（如光滑性、高成功率等）。</li>
-<li>相关材料：<ul>
-<li>源码：无</li>
-<li>视频：<a target="_blank" rel="noopener" href="https://youtu.be/ZzmU1WZmunE">YouTube</a></li>
-<li>补充材料：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/isometric-energies-for-recovering-injectivity-in-constrained-mapping/IsoTLC_SEA_supp.pdf">链接</a></li>
-<li>讨论班: 2023-02-25</li>
-</ul>
-</li>
-</ul>
-<p>TLC 能量：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/lifting-simplices-to-find-injectivity/">链接</a>，SEA 能量：<a target="_blank" rel="noopener" href="https://duxingyi-charles.github.io/publication/optimizing-global-injectivity-for-constrained-parameterization/">链接</a></p>
 
         
       
