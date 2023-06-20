@@ -5,15 +5,15 @@
   
   <title>Awesome Graphics Papers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本信息：  简介：本篇文章介绍了一种模仿自然界材料生长的不规则材料生成算法，验证了不规则材料设计的正向模拟的可行性，并为未来不规则材料的逆向设计提供了一些有趣的参考。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;Daraiolab&#x2F;Virtual_Growth_Program 视频：无 讨论班: 2023-06-10    根据已知基本微结构的几何性质、链接规则和分布概率，在一个基底">
+  <meta name="description" content="基本信息：  简介：本文提出了一种新的金字塔形低通滤波器架构，结合历史帧数据对光线追踪的结果进行降噪。 相关材料： 源码：balintio&#x2F;nppd @ GitHub “Coming soon” as of Jun. 21st, 2023   幻灯片：N&#x2F;A 视频：balint 的个人网站 讨论班: 2023-06-11">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Awesome Graphics Papers">
-<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/Science/2022/irregular_growth/index.html">
+<meta property="og:url" content="https://gcl-seminar.github.io/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/neural-pyramid-mc-denoising/index.html">
 <meta property="og:site_name" content="Awesome Graphics Papers">
-<meta property="og:description" content="基本信息：  简介：本篇文章介绍了一种模仿自然界材料生长的不规则材料生成算法，验证了不规则材料设计的正向模拟的可行性，并为未来不规则材料的逆向设计提供了一些有趣的参考。 相关材料： 源码：https:&#x2F;&#x2F;github.com&#x2F;Daraiolab&#x2F;Virtual_Growth_Program 视频：无 讨论班: 2023-06-10    根据已知基本微结构的几何性质、链接规则和分布概率，在一个基底">
+<meta property="og:description" content="基本信息：  简介：本文提出了一种新的金字塔形低通滤波器架构，结合历史帧数据对光线追踪的结果进行降噪。 相关材料： 源码：balintio&#x2F;nppd @ GitHub “Coming soon” as of Jun. 21st, 2023   幻灯片：N&#x2F;A 视频：balint 的个人网站 讨论班: 2023-06-11">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-10T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-06-10T00:00:00.000Z">
+<meta property="article:published_time" content="2023-06-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-11T00:00:00.000Z">
 <meta property="article:author" content="GCL-Seminar">
 <meta name="twitter:card" content="summary">
   
@@ -59,14 +59,14 @@
 </header>
 
     <br>
-    <section id="main" class="outer"><article id="paper-reading-papers/Science/2022/irregular_growth" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="paper-reading-papers/SIGGRAPH/2023/neural-pyramid-mc-denoising" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   <h1 itemprop="name">
-    <a href="/Awesome-Graphics-Papers/papers/Science/2022/irregular_growth/" class="article-title" target="_blank" itemprop="url">Growth rules for irregular architected materials with programmable properties</a>
+    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/neural-pyramid-mc-denoising/" class="article-title" target="_blank" itemprop="url">Neural Partitioning Pyramids for Denoising Monte Carlo Renderings</a>
   </h1>
 
 
@@ -75,8 +75,8 @@
       </header>
     
     <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/Science/2022/irregular_growth/" class="article-date">
-  <time datetime="2023-06-10T00:00:00.000Z" itemprop="datePublished">2023-06-10</time>
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/neural-pyramid-mc-denoising/" class="article-date">
+  <time datetime="2023-06-11T00:00:00.000Z" itemprop="datePublished">2023-06-11</time>
 </a>-->
       <!-- 
 --><!-- by blair 160724 -->
@@ -87,13 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-          <p>论文标题：Growth rules for irregular architected materials with programmable properties</p>
-          <p>论文来源：Science 2022
+          <p>论文标题：Neural Partitioning Pyramids for Denoising Monte Carlo Renderings</p>
+          <p>论文来源：SIGGRAPH 2023
           </p>
-          <p>论文作者：Ke Liu, Rachel Sun, Chiara Daraio</p>
+          <p>论文作者：Martin Bálint, Krzysztof Wolski, Karol Myszkowski, Hans-Peter Seidel, Rafał Mantiuk</p>
           
-          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Topology Optimization">Topology Optimization</a></p>
-          <p><a target="_blank" rel="noopener" href='https://www.science.org/doi/10.1126/science.abn1459'>论文 / 项目链接</a></p>
+          <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Denoising">Denoising</a></p>
+          <p><a target="_blank" rel="noopener" href='https://balint.io/nppd/'>论文 / 项目链接</a></p>
 
         </blockquote>
       
@@ -101,15 +101,18 @@
       
         <p>基本信息：</p>
 <ul>
-<li>简介：本篇文章介绍了一种模仿自然界材料生长的不规则材料生成算法，验证了不规则材料设计的正向模拟的可行性，并为未来不规则材料的逆向设计提供了一些有趣的参考。</li>
+<li>简介：本文提出了一种新的金字塔形低通滤波器架构，结合历史帧数据对光线追踪的结果进行降噪。</li>
 <li>相关材料：<ul>
-<li>源码：<a target="_blank" rel="noopener" href="https://github.com/Daraiolab/Virtual_Growth_Program">https://github.com/Daraiolab/Virtual_Growth_Program</a></li>
-<li>视频：无</li>
-<li>讨论班: 2023-06-10</li>
+<li>源码：<a target="_blank" rel="noopener" href="https://github.com/balintio/nppd">balintio&#x2F;nppd @ GitHub</a><ul>
+<li>“Coming soon” as of Jun. 21st, 2023</li>
+</ul>
+</li>
+<li>幻灯片：N&#x2F;A</li>
+<li>视频：<a target="_blank" rel="noopener" href="https://balint.io/nppd/nppd_video.mp4">balint 的个人网站</a></li>
+<li>讨论班: 2023-06-11</li>
 </ul>
 </li>
 </ul>
-<p>根据已知基本微结构的几何性质、链接规则和分布概率，在一个基底上逐步填充基本微结构，从而模拟自然界不规则材料的生成过程。</p>
 
       
      <!-- by blair add this if sentence at 20160725 -->
@@ -168,16 +171,8 @@
     
 <nav id="article-nav">
   
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/neural-pyramid-mc-denoising/" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-title"><span>&lt;</span>&nbsp;
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Awesome-Graphics-Papers/papers/Science/2022/irregular_growth/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
     </a>
   
