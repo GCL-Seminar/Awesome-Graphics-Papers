@@ -2,7 +2,7 @@
 layout: 'paper-reading'
 papertitle: 'Streamline stiffener path optimization (SSPO) for embedded stiffener layout design of non-uniform curved grid-stiffened composite (NCGC) structures'
 paperauthors: Dan Wang, Mostafa M. Abdalla, Zhen-Pei Wang, Zhoucheng Su
-papersource: 'Streamline stiffener path optimization (SSPO) for embedded stiffener layout design of non-uniform curved grid-stiffened composite (NCGC) structures'
+papersource: 'Computer Methods in Applied Mechanics and Engineering'
 paperurl: 'https://linkinghub.elsevier.com/retrieve/pii/S0045782518304560'
 papertags: Topology Optimization
 date: 2023-07-29
