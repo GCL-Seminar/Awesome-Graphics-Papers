@@ -1,4 +1,3 @@
-
 ---
 layout: 'paper-reading'
 papertitle: 'Smoothed Particle Hydrodynamics Techniques for the Physics Based Simulation of Fluids and Solids'
