@@ -17,3 +17,4 @@ papers:
   2023:
     - name: 'A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling'
     - name: 'Neural Partitioning Pyramids for Denoising Monte Carlo Renderings'
+    - name: 'Second-order Stencil Descent for Interior-point Hyperelasticity'
