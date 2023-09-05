@@ -4,7 +4,7 @@ papertitle: 'Second-order Stencil Descent for Interior-point Hyperelasticity'
 paperauthors: LEI LAN, MINCHEN LI, CHENFANFU JIANG, HUAMIN WANG, YIN YANG,
 papersource: 'SIGGRAPH'
 paperurl: 'https://drive.google.com/uc?export=view&id=1PRp8vmH_62MfqXmtq4-Jlo_X_43FSn7X'
-papertags:  Finite Element Method, Incremental Potential Contact, Simulation, GPU Acceleration
+papertags:  Finite Element Method, Incremental Potential Contact, GPU Acceleration
 date: 2023-9-02
 ---
 
