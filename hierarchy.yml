@@ -22,8 +22,7 @@ rootHierarchy:
                 - name: Indirect lighting
                 - name: Rasterization pipeline optimization
             - name: Ray tracing
-              children:
-                - name: Path Guiding
+            - name: Path Guiding
             - name: Radiosity
             - name: Photon mapping
             - name: Foveated Rendering
