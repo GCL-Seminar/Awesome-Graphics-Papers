@@ -1,0 +1,9 @@
+# I3D paper list
+
+sourceInfo:
+  name: I3D
+  fullname: ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+papers:
+  2023:
+    - name: 'Importance-Based Ray Strategies for Dynamic Diffuse Global Illumination'
+    
