@@ -20,3 +20,4 @@ papers:
     - name: 'Inverse Global Illumination using a Neural Radiometric Prior'
     - name: 'Neural Parametric Mixtures for Path Guiding'
     - name: 'NeRO: Neural Geometry and BRDF Reconstruction of Reflective Objects from Multiview Images'
+    - name: 'Differentiable Stripe Patterns for Inverse Design of Structured Surfaces'

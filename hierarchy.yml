@@ -62,6 +62,7 @@ rootHierarchy:
         - name: Finite Element Method
         - name: Plasticity Simulation
         - name: Topology Optimization
+        - name: Structure Design
     - name: DSL-Tools
 # auxHierarchy:
 # - name:
