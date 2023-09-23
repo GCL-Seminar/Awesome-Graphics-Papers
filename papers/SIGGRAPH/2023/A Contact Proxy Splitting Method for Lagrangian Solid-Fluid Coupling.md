@@ -4,7 +4,7 @@ papertitle: 'A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Couplin
 paperauthors: Tianyi Xie, Minchen Li, Yin Yang, and Chenfanfu Jiang
 papersource: 'SIGGRAPH'
 paperurl: 'https://drive.google.com/uc?export=view&id=1Nv47RP2tNunw3w7-eZy3qNu3InXRPB2q'
-papertags:  Finite Element Method, Particle-based Method, Smoothed Particle Hydrodynamics, Fluid Solid Coupling
+papertags:  Finite Element Method, Particle-based Method, Smoothed Particle Hydrodynamics, Fluid Solid Coupling, Incremental Potential Contact
 date: 2023-06-09
 ---
 

@@ -49,11 +49,13 @@ rootHierarchy:
     - name: Simulation
       children:
         - name: Sensitivity analysis
+        - name: GPU Acceleration
         - name: Differentiable Simulation 
         - name: Robotics
         - name: Particle-based Method 
         - name: Smoothed Particle Hydrodynamics
         - name: Fluid Solid Coupling
+        - name: Incremental Potential Contact
         - name: Learning-based Simulation
         - name: Fluid Simulation
         - name: Position Based Dynamics
