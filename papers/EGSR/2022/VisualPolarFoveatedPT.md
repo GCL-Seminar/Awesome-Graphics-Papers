@@ -1,7 +1,7 @@
 ---
 layout: 'paper-reading'
 papertitle: 'Foveated Real-Time Path Tracing in Visual-Polar Space'
-paperauthors: M. Koskela , A. Lotvonen , M. Mäkitalo , P. Kivi , T. Viitanen , P. Jääskeläinen
+paperauthors: M. Koskela, A. Lotvonen, M. Mäkitalo, P. Kivi, T. Viitanen, P. Jääskeläinen
 papersource: 'EGSR'
 paperurl: 'https://trepo.tuni.fi//bitstream/handle/10024/129578/Foveated_Real_Time_Path_Tracing_in_Visual_Polar_Space.pdf?sequence=1'
 papertags: Foveated Rendering 
