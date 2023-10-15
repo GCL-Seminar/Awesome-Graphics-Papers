@@ -63,6 +63,79 @@
     </div>
     <hr>
     
+      <article id="paper-reading-papers/VLDB/2024/RTIndeX" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/VLDB/2024/RTIndeX/"><strong>RTIndeX: Exploiting Hardware-Accelerated GPU Raytracing for Database Indexing</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/VLDB/2024/RTIndeX/" class="article-date">
+  <time datetime="2023-10-15T00:00:00.000Z" itemprop="datePublished">2023-10-15</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：RTIndeX: Exploiting Hardware-Accelerated GPU Raytracing for Database Indexing</p>
+            <p>论文来源：VLDB 2024
+            </p>
+            <p>论文作者：Justus Henneberg, Felix Schuhknecht</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Exploit of Raytracing on other fields">Exploit of Raytracing on other fields</a></p>
+            <p><a target="_blank" rel="noopener" href='https://arxiv.org/pdf/2303.01139.pdf'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：用 NVIDIA GPU 提供的硬件光追单元，来进行数据库索引查找问题的解决</li>
+<li>相关材料：<ul>
+<li>源码：<a target="_blank" rel="noopener" href="https://gitlab.rlp.net/juhenneb/rtindex">https://gitlab.rlp.net/juhenneb/rtindex</a></li>
+<li>视频：似乎还没有</li>
+<li>讨论班: 2023-10-15</li>
+</ul>
+</li>
+</ul>
+<p>本篇文章实现了一套利用 NVIDIA RTX GPU 提供的硬件光追单元来解决数据库索引问题的框架，其将要索引的数据集当作 3D 场景中的一系列物体，并且发射射线来进行点查询和范围查询。为了探索这种方法的优劣，本文还仔细比较了很多情况下该方法与其它 CPU&#x2F;GPU 数据库索引方法的性能。</p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
       <article id="paper-reading-papers/SIGGRAPH/2023/Differentiable Stripe Patterns for Inverse Design of Structured Surfaces" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -191,6 +264,80 @@
 </li>
 </ul>
 <p>本文提出了一种基于神经渲染的方法NeRO，用于从多视角图像中重建光泽反射（Glossy）物体的几何与BRDF。首先通过应用split-sum近似和积分方向编码来近似直接光和间接光的着色效果，从而准确地重建反射对象的几何形状。然后在物体几何形状固定的情况下，使用更精确的采样来恢复环境光和物体的BRDF。测试数据集上，几何的重建效果好于COLMAP、NeuS等方法，BRDF的重建效果好于NDR等方法。</p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
+      <article id="paper-reading-papers/SIGGRAPH/2023/PVHV" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/PVHV/"><strong>Potentially Visible Hidden-volume Rendering for Multi-view Warping</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/PVHV/" class="article-date">
+  <time datetime="2023-09-03T00:00:00.000Z" itemprop="datePublished">2023-09-03</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：Potentially Visible Hidden-volume Rendering for Multi-view Warping</p>
+            <p>论文来源：SIGGRAPH 2023
+            </p>
+            <p>论文作者：Janghun Kim, Sungkil Lee</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Rasterization pipeline optimization">Rasterization pipeline optimization</a></p>
+            <p><a target="_blank" rel="noopener" href='https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-cam.pdf'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：一种基于 depth peeling 的思想，快速计算在新视点可能可见的不可见区域，从而进行 fragment culling 的技术</li>
+<li>相关材料：<ul>
+<li>源码：<a target="_blank" rel="noopener" href="https://github.com/cgskku/pvhv">https://github.com/cgskku/pvhv</a> (只有几个 shader)</li>
+<li>视频：YouTube <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=cnR8iujBu7A">SIGGRAPH 2023: Potentially Visible Hidden-Volume Rendering for Multi-View Warping</a></li>
+<li>SIGGRAPH 的 Slide: <a target="_blank" rel="noopener" href="https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-slides.pdf">here</a></li>
+<li>讨论班: 2023-09-03</li>
+</ul>
+</li>
+</ul>
+<p>在多视点 warping 时，重用已有样本是比较重要的。该文章给出了对于不同的可能视点分布类型下，那些可能在一个视点内被遮挡，但在其它视点中被暴露的区域的一种快速计算方法。该方法可以用于 warping 前的片段剔除。</p>
 
         
       
@@ -420,6 +567,80 @@
 
 
     
+      <article id="paper-reading-papers/SIGGRAPH/2023/wave-optics-reflection-model-for-hair-fur" class="article article-type-paper-reading" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <myh11 itemprop="name">
+      
+        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/wave-optics-reflection-model-for-hair-fur/"><strong>A Practical Wave Optics Reflection Model for Hair and Fur</strong></a>
+      
+      <!--<a>
+      <div = post.date  </div>
+      </a>-->
+      <br> <!-- blair add -->
+    </myh11>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/wave-optics-reflection-model-for-hair-fur/" class="article-date">
+  <time datetime="2023-07-23T00:00:00.000Z" itemprop="datePublished">2023-07-23</time>
+</a>-->
+      <!--
+-->
+      <!--
+      
+      -->
+    </div>
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <blockquote>
+            <p>论文标题：A Practical Wave Optics Reflection Model for Hair and Fur</p>
+            <p>论文来源：SIGGRAPH 2023
+            </p>
+            <p>论文作者：Mengqi (Mandy) Xia, Bruce Walter, Christophe Hery, Olivier Maury, Eric Michielssen, Steve Marschner</p>
+            
+            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Material">Material</a></p>
+            <p><a target="_blank" rel="noopener" href='https://mandyxmq.github.io/research/assets/WaveFiber3d_paper_compress.pdf'>论文 / 项目链接</a></p>
+    
+          </blockquote>
+          <p>基本信息：</p>
+<ul>
+<li>简介：一个新的粗糙纤维建模的材质模型。</li>
+<li>相关材料：<ul>
+<li>源码：<a target="_blank" rel="noopener" href="https://github.com/mandyxmq/WaveFiber3d">https://github.com/mandyxmq/WaveFiber3d</a></li>
+<li>项目网站：<a target="_blank" rel="noopener" href="https://mandyxmq.github.io/research/wavefiber_3d.html">https://mandyxmq.github.io/research/wavefiber_3d.html</a></li>
+<li>讨论班: 2023-07-23</li>
+</ul>
+</li>
+</ul>
+<p>传统的纤维散射模型缺乏了一些重要的纤维外观表现。之前的波动散射工作对纤维建模采用了理想的挤出模型，这样的模型缺乏对表面粗糙度和倾斜的角质鳞片的建模。</p>
+<p>本工作中将粗糙纤维的建模向前推进了重要的一步，将任意的 3D microgeometry 纳入考量。该工作首先提出了一个基于几何光学部分近似的 3D 波动光学模拟器，并使用 GPU 加速，来进行表面反射和衍射式散射的模拟，然后将这些模拟结果放到本工作提出的一个基于小波噪声的纤维模型里面去，从而实现更真实的仿真。</p>
+
+        
+      
+    </div>
+	
+    <!--
+	
+    -->
+    <!--
+    
+    -->
+  </div>
+  
+</article>
+
+
+
+    
       <article id="paper-reading-papers/SIGGRAPH/2023/Inverse GI using a Neural Radiometric Prior" class="article article-type-paper-reading" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -569,222 +790,8 @@
 
 
     
-      <article id="paper-reading-papers/Science/2022/irregular_growth" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/Science/2022/irregular_growth/"><strong>Growth rules for irregular architected materials with programmable properties</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/Science/2022/irregular_growth/" class="article-date">
-  <time datetime="2023-06-10T00:00:00.000Z" itemprop="datePublished">2023-06-10</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：Growth rules for irregular architected materials with programmable properties</p>
-            <p>论文来源：Science 2022
-            </p>
-            <p>论文作者：Ke Liu, Rachel Sun, Chiara Daraio</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Topology Optimization">Topology Optimization</a></p>
-            <p><a target="_blank" rel="noopener" href='https://www.science.org/doi/10.1126/science.abn1459'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本篇文章介绍了一种模仿自然界材料生长的不规则材料生成算法，验证了不规则材料设计的正向模拟的可行性，并为未来不规则材料的逆向设计提供了一些有趣的参考。</li>
-<li>相关材料：<ul>
-<li>源码：<a target="_blank" rel="noopener" href="https://github.com/Daraiolab/Virtual_Growth_Program">https://github.com/Daraiolab/Virtual_Growth_Program</a></li>
-<li>视频：无</li>
-<li>讨论班: 2023-06-10</li>
-</ul>
-</li>
-</ul>
-<p>根据已知基本微结构的几何性质、链接规则和分布概率，在一个基底上逐步填充基本微结构，从而模拟自然界不规则材料的生成过程。</p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="paper-reading-papers/SIGGRAPH/2023/A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/"><strong>A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/SIGGRAPH/2023/A%20Contact%20Proxy%20Splitting%20Method%20for%20Lagrangian%20Solid-Fluid%20Coupling/" class="article-date">
-  <time datetime="2023-06-09T00:00:00.000Z" itemprop="datePublished">2023-06-09</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：A Contact Proxy Splitting Method for Lagrangian Solid-Fluid Coupling</p>
-            <p>论文来源：SIGGRAPH 2023
-            </p>
-            <p>论文作者：Tianyi Xie, Minchen Li, Yin Yang, and Chenfanfu Jiang</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Finite Element Method">Finite Element Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Particle-based Method">Particle-based Method</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Smoothed Particle Hydrodynamics">Smoothed Particle Hydrodynamics</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Fluid Solid Coupling">Fluid Solid Coupling</a>, <a href="/Awesome-Graphics-Papers/hierarchies.html#Incremental Potential Contact">Incremental Potential Contact</a></p>
-            <p><a target="_blank" rel="noopener" href='https://drive.google.com/uc?export=view&id=1Nv47RP2tNunw3w7-eZy3qNu3InXRPB2q'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：本文提出了一种用于FEM可变形体与SPH流体之间的强流固耦合算法。首先，本文将SPH流体的运动、不可压条件等求解转化为能量函数优化问题。其次，本文将流固耦合问题转化为流体粒子与固体网格之间的碰撞问题，通过引入了IPC模型，在运动求解的同时处理了碰撞与耦合，并提出了强流固耦合对应的能量函数优化问题。最后，本文针对提出的优化问题使用了交替迭代方法，借助Contact Proxy实现了快速且稳定的求解。</li>
-<li>视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kVByO8_1CT8">youtube</a></li>
-<li>讨论班：2023-06-03</li>
-</ul>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="paper-reading-papers/I3D/2023/Importance-Based Ray Strategies DDGI" class="article article-type-paper-reading" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <myh11 itemprop="name">
-      
-        <a class="article-title-index" href="/Awesome-Graphics-Papers/papers/I3D/2023/Importance-Based%20Ray%20Strategies%20DDGI/"><strong>Importance-Based Ray Strategies for Dynamic Diffuse Global Illumination</strong></a>
-      
-      <!--<a>
-      <div = post.date  </div>
-      </a>-->
-      <br> <!-- blair add -->
-    </myh11>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <!--<a href="/Awesome-Graphics-Papers/papers/I3D/2023/Importance-Based%20Ray%20Strategies%20DDGI/" class="article-date">
-  <time datetime="2023-05-14T00:00:00.000Z" itemprop="datePublished">2023-05-14</time>
-</a>-->
-      <!--
--->
-      <!--
-      
-      -->
-    </div>
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <blockquote>
-            <p>论文标题：Importance-Based Ray Strategies for Dynamic Diffuse Global Illumination</p>
-            <p>论文来源：I3D 2023
-            </p>
-            <p>论文作者：ZIHAO LIU, JING HUANG, ALLAN ROCHA, JIM MALMROS, JERRY ZHANG</p>
-            
-            <p>论文标签：<a href="/Awesome-Graphics-Papers/hierarchies.html#Global Illumination">Global Illumination</a></p>
-            <p><a target="_blank" rel="noopener" href='https://allenliuzihao.github.io/IS-DDGI/'>论文 / 项目链接</a></p>
-    
-          </blockquote>
-          <p>基本信息：</p>
-<ul>
-<li>简介：基于重要性采样光线策略的动态漫反射全局光照。</li>
-<li>相关材料：<ul>
-<li>源码：无</li>
-<li>视频：无</li>
-<li>讨论班: 2023-05-14</li>
-</ul>
-</li>
-</ul>
-<p>本文提出了一种DDGI（动态漫反射全局光照）的改进方法IS-DDGI，IS-DDGI使用多重重要性采样方法改进了DDGI，在具有1.27-2.47倍时间加速的情况下实现了与DDGI相似的视觉质量。</p>
-
-        
-      
-    </div>
-	
-    <!--
-	
-    -->
-    <!--
-    
-    -->
-  </div>
-  
-</article>
-
-
-
-    
       <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/Awesome-Graphics-Papers/page/2/">2</a><a class="page-number" href="/Awesome-Graphics-Papers/page/3/">3</a><a class="page-number" href="/Awesome-Graphics-Papers/page/4/">4</a><a class="extend next" rel="next" href="/Awesome-Graphics-Papers/page/2/">下一页 &amp;raquo;</a>
+        <span class="page-number current">1</span><a class="page-number" href="/Awesome-Graphics-Papers/page/2/">2</a><a class="page-number" href="/Awesome-Graphics-Papers/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/Awesome-Graphics-Papers/page/5/">5</a><a class="extend next" rel="next" href="/Awesome-Graphics-Papers/page/2/">下一页 &amp;raquo;</a>
       </nav>
     
 
