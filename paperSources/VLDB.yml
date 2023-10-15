@@ -1,0 +1,8 @@
+# 数据库领域的顶级会议。因为有和 GPU 硬件光追相关的文章所以列入。
+# 请参考 RTIndex 这篇文章。
+sourceInfo:
+  name: VLDB
+  fullname: Proceedings of the VLDB Endowment
+papers:
+  2024:
+    - name: 'RTIndeX: Exploiting Hardware-Accelerated GPU Raytracing for Database Indexing'

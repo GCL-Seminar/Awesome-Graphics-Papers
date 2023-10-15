@@ -41,6 +41,7 @@ rootHierarchy:
             - name: Acceleration structure
         - name: Differentiable Rendering
         - name: Rendering System
+        - name: Exploit of Raytracing on other fields
     - name: Geometry
       children:
         - name: Decomposition
