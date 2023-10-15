@@ -22,3 +22,5 @@ papers:
     - name: 'Neural Parametric Mixtures for Path Guiding'
     - name: 'NeRO: Neural Geometry and BRDF Reconstruction of Reflective Objects from Multiview Images'
     - name: 'Differentiable Stripe Patterns for Inverse Design of Structured Surfaces'
+    - name: 'Potentially Visible Hidden-volume Rendering for Multi-view Warping'
+    - name: 'A Practical Wave Optics Reflection Model for Hair and Fur'
