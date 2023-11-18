@@ -1,0 +1,9 @@
+# Advances in Engineering Software paper list
+# This is intended for Advances in Engineering Software papers that don't appear in SIGGRAPH & SIGGRAPH Asia.
+
+sourceInfo:
+  name: Advances in Engineering Software
+  fullname: Advances in Engineering Software
+papers:
+  2022:
+    - name: "3D-TSV: The 3D Trajectory-based Stress Visualizer"
